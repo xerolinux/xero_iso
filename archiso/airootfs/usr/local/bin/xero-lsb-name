@@ -27,3 +27,4 @@ Main()
 }
 
 Main "$@" 
+rm /usr/local/bin/xero-lsb-name

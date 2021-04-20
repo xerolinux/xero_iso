@@ -176,6 +176,7 @@ qt5-tools
 qt5-translations
 qt5-xmlpatterns
 solid
+wget
 yaml-cpp
 
 ##### you can also use nmtui from the terminal

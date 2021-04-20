@@ -5,3 +5,4 @@ echo "Moving content from skel"
 echo "#################################"
 
 for i in `ls /home/`; do su -s "/bin/bash" -c "cp -aT /etc/skel/ /home/$i/" $i || exit 0; done
+rm /usr/local/bin/xerolinux-skel
