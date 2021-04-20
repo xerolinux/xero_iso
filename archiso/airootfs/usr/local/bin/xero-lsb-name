@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Run xero hooks related commands.
+
+Lsb_release() {
+    local file=/etc/lsb-release
+
+    if [ -z "$(grep "^DISTRIB_CODENAME=" $file)" ] ; then
+        # add missing DISTRIB_CODENAME=
+        echo "DISTRIB_CODENAME=rolling" >> $file
+    fi
+    sed -i $file \
+        -e 's|^DISTRIB_ID=.*$|DISTRIB_ID=XeroLinux|' \
+        -e 's|^DISTRIB_CODENAME=.*$|DISTRIB_CODENAME=rolling|' \
+        -e 's|^DISTRIB_DESCRIPTION=.*$|DISTRIB_DESCRIPTION=\"XeroLinux\"|'
+}
+
+Main()
+{
+    local hookname="$1"
+
+    case "$hookname" in
+        lsb-release) Lsb_release ;;
+        "")          Lsb_release
+                     ;;
+    esac
+}
+
+Main "$@" 
