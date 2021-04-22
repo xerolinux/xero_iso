@@ -1,0 +1,10 @@
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+SaveGeometryOnExit=false
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAA8sAAAGcAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
