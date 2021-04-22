@@ -25,7 +25,6 @@ file_permissions=(
   ["/usr/local/bin/xerolinux-before"]="0:0:755"
   ["/usr/local/bin/xerolinux-skel"]="0:0:755" 
   ["/usr/local/bin/xerolinux-all-cores"]="0:0:755"
-  ["/usr/local/bin/xero-lsb-name"]="0:0:755"
   ["/usr/local/bin/xerolinux-final"]="0:0:755"
   ["/usr/local/bin/kvm"]="0:0:755"
   ["/usr/local/bin/smb"]="0:0:755"
