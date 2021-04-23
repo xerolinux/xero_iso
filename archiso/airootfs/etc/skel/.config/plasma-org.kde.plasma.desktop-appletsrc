@@ -6,9 +6,9 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
+[Containments][19]
 ItemGeometriesHorizontal=
-activityId=608dde78-113f-4159-84c4-1f609c70e981
+activityId=9cf779cf-7948-4253-bb89-9f0eb5c3cd3a
 formfactor=0
 immutability=1
 lastScreen=0
@@ -16,12 +16,12 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][1][ConfigDialog]
+[Containments][19][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
 
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=/home/xero/Wallpapers/wallhaven-j5lqe5.jpg
+[Containments][19][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/defaultbg/Unix.jpg
 SlidePaths=/usr/share/wallpapers
 
 [Containments][2]
@@ -41,17 +41,14 @@ plugin=org.kde.plasma.digitalclock
 immutability=1
 plugin=org.kde.plasma.showdesktop
 
-[Containments][2][Applets][3]
+[Containments][2][Applets][21]
 immutability=1
-plugin=org.kde.plasma.kickoff
+plugin=org.kde.plasma.kicker
 
-[Containments][2][Applets][3][Configuration][General]
+[Containments][2][Applets][21][Configuration][General]
 favoritesPortedToKAstats=true
 
-[Containments][2][Applets][3][Configuration][Shortcuts]
-global=Alt+F1
-
-[Containments][2][Applets][3][Shortcuts]
+[Containments][2][Applets][21][Shortcuts]
 global=Alt+F1
 
 [Containments][2][Applets][4]
@@ -74,11 +71,11 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 SystrayContainmentId=8
 
 [Containments][2][General]
-AppletOrder=3;4;5;6;7;17;18
+AppletOrder=4;21;5;6;7;17;18
 
 [Containments][8]
 activityId=
