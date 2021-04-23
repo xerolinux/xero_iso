@@ -181,71 +181,33 @@ echo
 #	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
 #	#is not working so fixing this during calamares installation
 
-# echo
-# echo "################################################################## "
-# tput setaf 2
-# echo "Phase 5 : "
-# echo "- Changing all references"
-# echo "- Adding time to /etc/dev-rel"
-# tput sgr0
-# echo "################################################################## "
-# echo
-#
-# 	#Setting variables
-#
-# 	#profiledef.sh
-# 	oldname1='iso_name=arcolinux'
-# 	newname1='iso_name=arcolinux'
-#
-# 	oldname2='iso_label="arcolinux'
-# 	newname2='iso_label="arcolinux'
-#
-# 	oldname3='ArcoLinux'
-# 	newname3='ArcoLinux'
-#
-# 	#hostname
-# 	oldname4='ArcoLinux'
-# 	newname4='ArcoLinux'
-#
-# 	#lightdm.conf user-session
-# 	oldname5='user-session=xfce'
-# 	newname5='user-session='$lightdmDesktop
-#
-# 	#lightdm.conf autologin-session
-# 	oldname6='#autologin-session='
-# 	newname6='autologin-session='$lightdmDesktop
-#
-# 	echo "Changing all references"
-# 	echo
-# 	sed -i 's/'$oldname1'/'$newname1'/g' $buildFolder/archiso/profiledef.sh
-# 	sed -i 's/'$oldname2'/'$newname2'/g' $buildFolder/archiso/profiledef.sh
-# 	sed -i 's/'$oldname3'/'$newname3'/g' $buildFolder/archiso/airootfs/etc/dev-rel
-# 	sed -i 's/'$oldname4'/'$newname4'/g' $buildFolder/archiso/airootfs/etc/hostname
-# 	sed -i 's/'$oldname5'/'$newname5'/g' $buildFolder/archiso/airootfs/etc/lightdm/lightdm.conf
-# 	sed -i 's/'$oldname6'/'$newname6'/g' $buildFolder/archiso/airootfs/etc/lightdm/lightdm.conf
-#
-# 	echo "Adding time to /etc/dev-rel"
-# 	date_build=$(date -d now)
-# 	echo "Iso build on : "$date_build
-# 	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" $buildFolder/archiso/airootfs/etc/dev-rel
+echo
+echo "################################################################## "
+tput setaf 2
+echo "Phase 4 : "
+echo "- Adding time to /etc/dev-rel"
+tput sgr0
+echo "################################################################## "
+echo
+ 	#Setting variables
 
+ 	oldname1='ArchLinux'
+ 	newname1='XeroLinux'
 
-#echo
-#echo "################################################################## "
-#tput setaf 2
-#echo "Phase 6 :"
-#echo "- Cleaning the cache from /var/cache/pacman/pkg/"
-#tput sgr0
-#echo "################################################################## "
-#echo
+ 	echo "Changing all references"
+ 	echo
+ 	sed -i 's/'$oldname1'/'$newname1'/g' $buildFolder/archiso/airootfs/etc/dev-rel
 
-	#echo "Cleaning the cache from /var/cache/pacman/pkg/"
-	#yes | sudo pacman -Scc
+ 	echo "Adding time to /etc/dev-rel"
+ 	date_build=$(date -d now)
+ 	echo "Iso build on : "$date_build
+ 	sudo sed -i "s/\(^ISO_BUILD=\).*/\1$date_build/" $buildFolder/archiso/airootfs/etc/dev-rel
+
 
 echo
 echo "################################################################## "
 tput setaf 2
-echo "Phase 7 :"
+echo "Phase 5 :"
 echo "- Building the iso - this can take a while - be patient"
 tput sgr0
 echo "################################################################## "
@@ -254,7 +216,6 @@ echo
 	[ -d $outFolder ] || mkdir $outFolder
 	cd $buildFolder/archiso/
 	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
-
 
 
 # echo
