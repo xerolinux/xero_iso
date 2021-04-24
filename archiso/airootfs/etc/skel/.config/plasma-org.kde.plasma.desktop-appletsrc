@@ -6,24 +6,6 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][19]
-ItemGeometriesHorizontal=
-activityId=9cf779cf-7948-4253-bb89-9f0eb5c3cd3a
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][19][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][19][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/defaultbg/Unix.jpg
-SlidePaths=/usr/share/wallpapers
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -76,6 +58,19 @@ SystrayContainmentId=8
 
 [Containments][2][General]
 AppletOrder=4;21;5;6;7;17;18
+
+[Containments][22]
+ItemGeometriesHorizontal=
+activityId=cdd60594-c286-40b2-8d68-c76d0e8daf1c
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][22][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
 
 [Containments][8]
 activityId=
