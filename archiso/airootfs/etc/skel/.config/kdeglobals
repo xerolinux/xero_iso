@@ -134,6 +134,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [General]
+BrowserApplication=brave-browser.desktop
 ColorScheme=BreezeDark
 Name=Breeze Dark
 XftAntialias=true
