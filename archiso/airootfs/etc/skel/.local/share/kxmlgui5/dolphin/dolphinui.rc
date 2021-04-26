@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui translationDomain="kxmlgui5" version="33" name="dolphin">
+<gui name="dolphin" translationDomain="kxmlgui5" version="33">
  <MenuBar alreadyVisited="1">
   <Menu noMerge="1" name="file" alreadyVisited="1">
    <text translationDomain="kxmlgui5">&amp;File</text>
@@ -77,8 +77,8 @@
    <Action name="stop"/>
    <Separator/>
    <Action name="panels"/>
-   <Menu noMerge="1" icon="edit-select-text" name="location_bar">
-    <text context="@title:menu" translationDomain="dolphin">Location Bar</text>
+   <Menu noMerge="1" name="location_bar" icon="edit-select-text">
+    <text translationDomain="dolphin" context="@title:menu">Location Bar</text>
     <Action name="editable_location"/>
     <Action name="replace_location"/>
    </Menu>
@@ -95,6 +95,8 @@
    <Action name="bookmarks"/>
    <Action name="closed_tabs"/>
   </Menu>
+  <Separator weakSeparator="1"/>
+  <Separator weakSeparator="1"/>
   <Separator weakSeparator="1"/>
   <Menu noMerge="1" name="tools" alreadyVisited="1">
    <text translationDomain="kxmlgui5">&amp;Tools</text>
@@ -130,16 +132,17 @@
   </Menu>
  </MenuBar>
  <ToolBar noMerge="1" name="mainToolBar" alreadyVisited="1">
-  <text context="@title:menu" translationDomain="dolphin">Main Toolbar</text>
+  <text translationDomain="dolphin" context="@title:menu">Main Toolbar</text>
   <Action name="go_back"/>
+  <Action name="go_up"/>
   <Action name="go_forward"/>
   <Separator name="separator_0"/>
+  <Action name="go_home"/>
   <Action name="icons"/>
-  <Action name="compact"/>
-  <Action name="details"/>
   <Action name="url_navigators"/>
-  <Action name="open_terminal"/>
+  <Action name="compare_files"/>
   <Action name="split_stash"/>
+  <Action name="open_terminal"/>
   <Action name="show_hidden_files"/>
   <Action name="toggle_search"/>
   <Action name="toggle_filter"/>
@@ -199,6 +202,8 @@
   <Action priority="0" name="edit_paste"/>
   <Action priority="0" name="toggle_search"/>
   <Action priority="0" name="toggle_filter"/>
-  <Action iconText="Show Hidden" name="show_hidden_files"/>
+  <Action name="open_terminal" iconText="Run Terminal Here"/>
+  <Action name="show_hidden_files" iconText="Show Hidden"/>
+  <Action name="compare_files" iconText="Compare"/>
  </ActionProperties>
 </gui>
