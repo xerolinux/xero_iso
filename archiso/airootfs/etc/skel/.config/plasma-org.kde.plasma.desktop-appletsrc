@@ -11,7 +11,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -28,10 +28,25 @@ immutability=1
 plugin=org.kde.plasma.kicker
 
 [Containments][2][Applets][21][Configuration][General]
+favoriteSystemActions=logout,reboot
 favoritesPortedToKAstats=true
 
 [Containments][2][Applets][21][Shortcuts]
 global=Alt+F1
+
+[Containments][2][Applets][23]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][2][Applets][23][Configuration][General]
+length=791
+
+[Containments][2][Applets][24]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][2][Applets][24][Configuration][General]
+length=621
 
 [Containments][2][Applets][4]
 immutability=1
@@ -56,18 +71,27 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=60
 SystrayContainmentId=8
 
+[Containments][2][ConfigDialog]
+DialogHeight=83
+DialogWidth=1920
+
 [Containments][2][General]
-AppletOrder=4;21;5;6;7;17;18
+AppletOrder=4;21;5;6;24;17;23;7;18
 
 [Containments][22]
 ItemGeometriesHorizontal=
-activityId=cdd60594-c286-40b2-8d68-c76d0e8daf1c
+activityId=ff5dacbd-8c1c-4284-a79e-6370e9851124
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
+
+[Containments][22][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=509
+ToolBoxButtonY=38
 
 [Containments][22][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
@@ -77,7 +101,7 @@ activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
 
