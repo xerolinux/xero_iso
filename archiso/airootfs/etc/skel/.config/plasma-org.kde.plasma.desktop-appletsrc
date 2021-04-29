@@ -19,6 +19,13 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
+[Containments][2][Applets][17][Configuration][Appearance]
+use24hFormat=2
+
+[Containments][2][Applets][17][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][2][Applets][18]
 immutability=1
 plugin=org.kde.plasma.showdesktop
@@ -91,7 +98,7 @@ wallpaperplugin=org.kde.image
 [Containments][22][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=509
-ToolBoxButtonY=38
+ToolBoxButtonY=32
 
 [Containments][22][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
