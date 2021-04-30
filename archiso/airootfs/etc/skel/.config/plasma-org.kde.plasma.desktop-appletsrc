@@ -58,6 +58,10 @@ plugin=org.kde.plasma.panelspacer
 [Containments][2][Applets][24][Configuration][General]
 length=621
 
+[Containments][2][Applets][25]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
 [Containments][2][Applets][6]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -75,7 +79,7 @@ DialogHeight=83
 DialogWidth=1920
 
 [Containments][2][General]
-AppletOrder=21;6;24;17;23;7;18
+AppletOrder=21;25;6;24;17;23;7;18
 
 [Containments][22]
 ItemGeometriesHorizontal=
