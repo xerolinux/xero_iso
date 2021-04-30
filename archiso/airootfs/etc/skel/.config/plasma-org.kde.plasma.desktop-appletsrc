@@ -34,6 +34,9 @@ plugin=org.kde.plasma.showdesktop
 immutability=1
 plugin=org.kde.plasma.kicker
 
+[Containments][2][Applets][21][Configuration]
+PreloadWeight=100
+
 [Containments][2][Applets][21][Configuration][General]
 favoriteSystemActions=logout,reboot
 favoritesPortedToKAstats=true
@@ -55,17 +58,6 @@ plugin=org.kde.plasma.panelspacer
 [Containments][2][Applets][24][Configuration][General]
 length=621
 
-[Containments][2][Applets][4]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][2][Applets][5]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][2][Applets][5][Configuration][General]
-launchers=applications:systemsettings.desktop,preferred://filemanager,preferred://browser
-
 [Containments][2][Applets][6]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -83,7 +75,7 @@ DialogHeight=83
 DialogWidth=1920
 
 [Containments][2][General]
-AppletOrder=4;21;5;6;24;17;23;7;18
+AppletOrder=21;6;24;17;23;7;18
 
 [Containments][22]
 ItemGeometriesHorizontal=
@@ -98,7 +90,7 @@ wallpaperplugin=org.kde.image
 [Containments][22][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=509
-ToolBoxButtonY=32
+ToolBoxButtonY=36
 
 [Containments][22][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
