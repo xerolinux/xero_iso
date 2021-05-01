@@ -149,12 +149,12 @@ xorg-xrdb
 aic94xx-firmware
 appimagelauncher
 beautyline
-filebot
+#filebot
 freedownloadmanager
 makemkv
-nomachine
+#nomachine
 rpi-imager
-simplenote-electron-bin
+#simplenote-electron-bin
 wd719x-firmware
 webapp-manager
 

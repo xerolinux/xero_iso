@@ -1,7 +1,7 @@
 # GRUB boot loader configuration
 
-GRUB_DEFAULT=saved
-GRUB_TIMEOUT=5
+GRUB_DEFAULT="saved"
+GRUB_TIMEOUT="5"
 GRUB_DISTRIBUTOR="XeroLinux"
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
 GRUB_CMDLINE_LINUX=""
