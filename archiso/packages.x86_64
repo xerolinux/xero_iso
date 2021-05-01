@@ -43,6 +43,8 @@ irssi
 iwd
 jfsutils
 kitty-terminfo
+libfido2
+libusb-compat
 lftp
 linux
 linux-atm
@@ -76,6 +78,7 @@ os-prober
 partclone
 parted
 partimage
+pcsclite
 ppp
 pptpclient
 reflector
@@ -96,6 +99,7 @@ terminus-font
 termite-terminfo
 testdisk
 tmux
+tpm2-tss
 udftools
 usb_modeswitch
 usbmuxd
@@ -121,9 +125,8 @@ zsh
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
 
-alci-dwm-nemesis
-xero-calamares-dev
-xerolinux-calamares-config
+xero-calamares
+xl-calamares-config
 xterm
 
 #######################################################
@@ -137,7 +140,6 @@ dex
 libxinerama
 make
 xorg-xkill
-xterm
 xorg-xrdb
 
 #######################################################
@@ -146,6 +148,7 @@ xorg-xrdb
 
 aic94xx-firmware
 appimagelauncher
+beautyline
 filebot
 freedownloadmanager
 makemkv
@@ -177,6 +180,7 @@ qt5-translations
 qt5-xmlpatterns
 solid
 wget
+xmlto
 yaml-cpp
 
 ##### you can also use nmtui from the terminal
@@ -208,9 +212,10 @@ ttf-hack
 ttf-roboto
 ttf-ubuntu-font-family
 
-###icons
+###Theming
+latte-dock
+kvantum-qt5
 arc-icon-theme
-papirus-icon-theme
 
 ###utilities
 arandr
@@ -307,7 +312,7 @@ python-websockets
 ###########################################################################
 
 ###applications
-chromium
+brave
 
 ###cursors
 bibata-cursor-theme-bin
@@ -318,9 +323,6 @@ breeze
 font-manager-git
 ttf-font-awesome
 ttf-ms-fonts
-
-###icons
-surfn-arc-breeze-icons-git
 
 ###tools
 android-tools
@@ -367,14 +369,6 @@ neofetch
 
 #driver for virtualbox 
 virtualbox-guest-utils
-
-#xf86-video-intel
-#xf86-video-amdgpu
-#xf86-video-nouveau
-
-#nvidia
-#nvidia-settings
-#nvidia-utils
 
 ##### sddm display manager
 
@@ -543,6 +537,3 @@ keditbookmarks
 
 arcolinux-mirrorlist-git
 arcolinux-keyring
-
-#test
-arcolinux-wallpapers-git

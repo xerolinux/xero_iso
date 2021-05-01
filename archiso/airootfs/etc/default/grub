@@ -50,8 +50,8 @@ GRUB_THEME="/boot/grub/themes/DaftPunk/theme.txt"
 #GRUB_INIT_TUNE="480 440 1"
 
 # Uncomment to make grub stop using submenus
-GRUB_DISABLE_SUBMENU=y
+#GRUB_DISABLE_SUBMENU=y
 
 # Uncomment to make GRUB remember the last selection. This requires
 # setting 'GRUB_DEFAULT=saved' above.
-#GRUB_SAVEDEFAULT="true"
+GRUB_SAVEDEFAULT="true"

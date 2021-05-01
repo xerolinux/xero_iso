@@ -1,10 +1,10 @@
 [Desktop Entry]
 Comment[en_US]=
 Comment=
-Exec=pamac-tray
+Exec=/bin/pamac-tray
 GenericName[en_US]=
 GenericName=
-Icon=pamac-updater
+Icon=pamac
 MimeType=
 Name[en_US]=pamac-tray
 Name=pamac-tray

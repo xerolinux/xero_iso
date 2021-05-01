@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #set -e
 ###############################################################################
 # Author	:	Erik Dubois
@@ -15,16 +15,14 @@
 #
 ###############################################################################
 
-package=gdm
-if pacman -Qs $package > /dev/null ; then
-    ln -sf /usr/lib/systemd/system/gdm.service /etc/systemd/system/display-manager.service
-fi
-package=lightdm
-if pacman -Qs $package > /dev/null ; then
-  ln -sf /usr/lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service
-fi
-package=sddm
-if pacman -Qs $package > /dev/null ; then
-    ln -sf /usr/lib/systemd/system/sddm.service /etc/systemd/system/display-manager.service
-fi
-rm /usr/local/bin/xerolinux-displaymanager-check
+#Automount shared folders for virtualbox
+user=$( who | cut -d ' ' -f1 | uniq)
+sudo gpasswd -a $user vboxsf
+sudo systemctl enable vboxservice.service
+sudo systemctl start vboxservice.service
+echo "##############################################"
+echo "Now log out and log back in"
+echo "If you have set virtualbox to share a folder"
+echo "with automount, it will appear in the"
+echo "filemanager at next login"
+echo "##############################################"

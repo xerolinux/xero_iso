@@ -91,13 +91,14 @@ alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias grubfix='linstall ~/grub-tools.pkg.tar.zst && sudo rm ~/grub-tools.pkg.tar.zst'
 
 #Ventoy Create/Update (Change to actual disk)
-alias vpc='sudo ventoy -i -s /dev/sdi'
-alias vpd='sudo ventoy -u -s /dev/sdi'
+alias vpc='sudo ventoy -i -s /dev/sde'
+alias vpd='sudo ventoy -u -s /dev/sde'
 
 #add new fonts
 alias fc="sudo fc-cache -fv"
 
-#get fastest mirrors in your neighborhood 
+#get fastest mirrors in your neighborhood
+alias reflector='arcolinux-reflector-simple'
 alias mirrorr="rate-arch-mirrors | sudo tee /etc/pacman.d/mirrorlist"
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
@@ -201,6 +202,9 @@ alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.co
 alias sr="sudo reboot"
 alias ssn="sudo shutdown now"
 
+#Load changes to ./bashrc
+alias nbash='source ~/.bashrc'
+
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
 ex ()
@@ -227,10 +231,5 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-
-#create a file called .bashrc-personal and put all your personal aliases
-#in there. They will not be overwritten by skel.
-
-[[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 clear && neofetch | lolcat

@@ -134,6 +134,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [General]
+BrowserApplication=brave-browser.desktop
 ColorScheme=BreezeDark
 Name=Breeze Dark
 XftAntialias=true
@@ -147,7 +148,7 @@ toolBarFont=Hack,10,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
-Theme=breeze-dark
+Theme=BeautyLine
 
 [KDE]
 ColorScheme=BreezeLight
