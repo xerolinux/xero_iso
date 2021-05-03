@@ -298,6 +298,87 @@ xfce4-dev-tools
 zenity
 zip
 
+###audio
+alsa-card-profiles
+alsa-firmware
+alsa-plugins
+alsa-lib
+alsa-topology-conf
+alsa-ucm-conf
+alsa-utils
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gst-plugin-pipewire
+gstreamer
+libdvdcss
+libpipeline
+pulseaudio
+pulseeffects
+pulseaudio-alsa
+pulseaudio-qt
+pulsemixer
+pavucontrol
+python-pulsectl
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-media-session
+zita-alsa-pcmi
+
+
+###bluetooth
+blueberry
+bluez
+bluez-libs
+bluez-utils
+pulseaudio-bluetooth
+
+###network
+avahi
+nss-mdns
+mobile-broadband-provider-info
+modemmanager
+net-tools
+networkmanager
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+openresolv
+rate-arch-mirrors-bin
+smbclient
+traceroute
+
+###file management
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+mtpfs
+udiskie
+udisks2
+
+###tumbler
+tumbler
+ffmpegthumbnailer
+freetype2
+libgsf
+libopenraw
+poppler-glib
+poppler-qt5
+
+###video
+xf86-input-libinput
+xf86-input-vmmouse
+xf86-input-void
+mesa
+
 # Python & Libs
 python-cffi
 python-numpy
@@ -362,12 +443,13 @@ yakuake
 
 xorg-server
 xorg-apps
+xorg-xinit
 neofetch
-
 
 ##### Drivers for graphical cards
 
 #driver for virtualbox 
+open-vm-tools
 virtualbox-guest-utils
 
 ##### sddm display manager
