@@ -143,18 +143,18 @@ xorg-xkill
 xorg-xrdb
 
 #######################################################
-###     PACKAGES THAT ARE BY TECHXERO ~ DARKXERO    ###
+###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
 #######################################################
 
 aic94xx-firmware
 appimagelauncher
 beautyline
-filebot
+#filebot
 freedownloadmanager
-makemkv
-nomachine
+#makemkv
+#nomachine
 rpi-imager
-simplenote-electron-bin
+#simplenote-electron-bin
 wd719x-firmware
 webapp-manager
 
@@ -205,12 +205,9 @@ lm_sensors
 ###fonts
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
-noto-fonts
-ttf-dejavu
 ttf-droid
 ttf-hack
 ttf-roboto
-ttf-ubuntu-font-family
 
 ###Theming
 latte-dock
@@ -399,11 +396,13 @@ brave
 bibata-cursor-theme-bin
 breeze
 
-
 ###fonts
 font-manager-git
 ttf-font-awesome
 ttf-ms-fonts
+
+## Variety
+variety
 
 ###tools
 android-tools
@@ -526,7 +525,6 @@ plasma-workspace-wallpapers
 go
 packagekit-qt5
 pacman-contrib
-partitionmanager
 systemd-kcm
 ocs-url
 kde-gtk-config
@@ -557,7 +555,6 @@ sweeper
 filelight
 itinerary
 kio-extras
-kio-gdrive
 ksystemlog
 kcharselect
 khelpcenter
@@ -601,6 +598,21 @@ kdesdk-thumbnailers
 kmouth
 kontrast
 kmousetool
+
+## Telepathy Stuff
+
+telepathy-kde-accounts-kcm
+telepathy-kde-approver
+telepathy-kde-auth-handler
+telepathy-kde-call-ui
+telepathy-kde-common-internals
+telepathy-kde-contact-list
+telepathy-kde-contact-runner
+telepathy-kde-desktop-applets
+telepathy-kde-filetransfer-handler
+telepathy-kde-integration-module
+telepathy-kde-send-file
+telepathy-kde-text-ui
 
 ## Complements
 

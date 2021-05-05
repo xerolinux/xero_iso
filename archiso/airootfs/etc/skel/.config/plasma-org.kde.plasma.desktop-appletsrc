@@ -20,6 +20,8 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][17][Configuration][Appearance]
+dateFormat=longDate
+fontFamily=Ubuntu Light
 use24hFormat=2
 
 [Containments][2][Applets][17][Configuration][ConfigDialog]

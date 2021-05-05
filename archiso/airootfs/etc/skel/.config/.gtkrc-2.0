@@ -7,4 +7,4 @@ gtk-button-images=1
 gtk-cursor-theme-size=24
 gtk-cursor-theme-name="breeze_cursors"
 gtk-icon-theme-name="BeautyLine"
-gtk-font-name="Hack,  10"
+gtk-font-name="Droid Sans,10"

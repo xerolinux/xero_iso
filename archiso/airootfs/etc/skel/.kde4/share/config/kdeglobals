@@ -133,11 +133,11 @@ ForegroundVisited=155,89,182
 [General]
 ColorScheme=BreezeDark
 Name=Breeze Dark
-font=Hack,10,-1,5,50,0,0,0,0,0
-menuFont=Hack,10,-1,5,50,0,0,0,0,0
+font=Droid Sans,10,-1,5,50,0,0,0,0,0
+menuFont=Droid Sans,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Hack,8,-1,5,50,0,0,0,0,0
-toolBarFont=Hack,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=Droid Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=Droid Sans,10,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]

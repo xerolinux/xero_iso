@@ -137,14 +137,13 @@ ForegroundVisited=155,89,182
 BrowserApplication=brave-browser.desktop
 ColorScheme=BreezeDark
 Name=Breeze Dark
-XftAntialias=true
-XftHintStyle=hintfull
+XftHintStyle=hintslight
 XftSubPixel=rgb
-font=Hack,10,-1,5,50,0,0,0,0,0
-menuFont=Hack,10,-1,5,50,0,0,0,0,0
+font=Droid Sans,10,-1,5,50,0,0,0,0,0
+menuFont=Droid Sans,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Hack,8,-1,5,50,0,0,0,0,0
-toolBarFont=Hack,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=Droid Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=Droid Sans,10,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
@@ -180,7 +179,7 @@ View Style=DetailTree
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
-activeFont=Hack,10,-1,5,50,0,0,0,0,0
+activeFont=Droid Sans,10,-1,5,50,0,0,0,0,0
 activeForeground=252,252,252
 inactiveBackground=42,46,50
 inactiveBlend=161,169,177
