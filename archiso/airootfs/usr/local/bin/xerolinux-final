@@ -36,6 +36,12 @@ echo "#################################"
 chmod -v 750 /root
 
 echo "#################################"
+echo "Enable Bluetooth Service"
+echo "#################################"
+systemctl enable bluetooth.service
+systemctl start --now bluetooth.service
+
+echo "#################################"
 echo "End xerolinux-final"
 echo "#################################"
 rm /usr/local/bin/all-cores

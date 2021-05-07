@@ -146,17 +146,22 @@ xorg-xrdb
 ###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
 #######################################################
 
+## Essentials
+
 aic94xx-firmware
 appimagelauncher
 beautyline
-#filebot
-freedownloadmanager
-#makemkv
-#nomachine
 rpi-imager
-#simplenote-electron-bin
 wd719x-firmware
 webapp-manager
+
+## TechXero Only
+
+#filebot
+#freedownloadmanager
+#makemkv
+#nomachine
+#simplenote-electron-bin
 
 #######################################################
 ###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
@@ -295,45 +300,42 @@ xfce4-dev-tools
 zenity
 zip
 
-###audio
-alsa-card-profiles
-alsa-firmware
-alsa-plugins
-alsa-lib
-alsa-topology-conf
-alsa-ucm-conf
-alsa-utils
+## G-Streamer
+
+gstreamer
 gst-libav
-gst-plugins-bad
 gst-plugins-base
-gst-plugins-good
+gst-plugins-bad
 gst-plugins-ugly
 gst-plugin-pipewire
-gstreamer
-libdvdcss
-libpipeline
-pulseaudio
-pulseeffects
-pulseaudio-alsa
-pulseaudio-qt
-pulsemixer
-pavucontrol
-python-pulsectl
+
+## Pulse Audio
+
+#pulseaudio
+#pulseeffects
+#pulseaudio-alsa
+#pulseaudio-bluetooth
+#pulseaudio-qt
+#pulsemixer
+#pavucontrol
+#python-pulsectl
+
+## Pipewire Audio
+
 pipewire
 pipewire-alsa
+pipewire-jack
 pipewire-pulse
-pipewire-media-session
-zita-alsa-pcmi
-
 
 ###bluetooth
+
 blueberry
 bluez
 bluez-libs
 bluez-utils
-pulseaudio-bluetooth
 
 ###network
+
 avahi
 nss-mdns
 mobile-broadband-provider-info
@@ -351,6 +353,7 @@ smbclient
 traceroute
 
 ###file management
+
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -362,6 +365,7 @@ udiskie
 udisks2
 
 ###tumbler
+
 tumbler
 ffmpegthumbnailer
 freetype2
@@ -371,12 +375,14 @@ poppler-glib
 poppler-qt5
 
 ###video
+
 xf86-input-libinput
 xf86-input-vmmouse
 xf86-input-void
 mesa
 
 # Python & Libs
+
 python-cffi
 python-numpy
 python-docopt
@@ -390,25 +396,28 @@ python-websockets
 ###########################################################################
 
 ###applications
+
 brave
 
 ###cursors
+
 bibata-cursor-theme-bin
 breeze
 
 ###fonts
+
 font-manager-git
 ttf-font-awesome
 ttf-ms-fonts
 
-## Variety
-variety
-
 ###tools
+
 android-tools
 mkinitcpio-openswap
+variety
 
 ###utilities
+
 alsi
 archey3
 appstream
@@ -599,21 +608,6 @@ kmouth
 kontrast
 kmousetool
 
-## Telepathy Stuff
-
-telepathy-kde-accounts-kcm
-telepathy-kde-approver
-telepathy-kde-auth-handler
-telepathy-kde-call-ui
-telepathy-kde-common-internals
-telepathy-kde-contact-list
-telepathy-kde-contact-runner
-telepathy-kde-desktop-applets
-telepathy-kde-filetransfer-handler
-telepathy-kde-integration-module
-telepathy-kde-send-file
-telepathy-kde-text-ui
-
 ## Complements
 
 krdc
@@ -629,5 +623,6 @@ keditbookmarks
 
 ##### want to add/use the ArcoLinux repos
 
+arcolinux-sddm-futuristic-git
 arcolinux-mirrorlist-git
 arcolinux-keyring
