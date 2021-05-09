@@ -87,9 +87,6 @@ alias fpup='flatpak update'
 #grub update
 alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-#Fix Grub OS Listing Permanently
-alias grubfix='linstall ~/grub-tools.pkg.tar.zst && sudo rm ~/grub-tools.pkg.tar.zst'
-
 #Ventoy Create/Update (Change to actual disk)
 alias vpc='sudo ventoy -i -s /dev/sde'
 alias vpd='sudo ventoy -u -s /dev/sde'

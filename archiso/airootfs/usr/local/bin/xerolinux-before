@@ -8,6 +8,7 @@ echo "#################################"
 pacman-key --init
 pacman-key --populate archlinux
 pacman-key --populate arcolinux
+pacman-key --populate xerolinux
 
 echo "Copy grub XeroComp theme (archiso deletes /boot when making the ISO)"
 echo "#################################"

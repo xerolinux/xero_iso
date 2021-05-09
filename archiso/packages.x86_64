@@ -85,7 +85,6 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-rxvt-unicode-terminfo
 sdparm
 sg3_utils
 smartmontools
@@ -149,19 +148,7 @@ xorg-xrdb
 ## Essentials
 
 aic94xx-firmware
-appimagelauncher
-beautyline
-rpi-imager
 wd719x-firmware
-webapp-manager
-
-## TechXero Only
-
-#filebot
-#freedownloadmanager
-#makemkv
-#nomachine
-#simplenote-electron-bin
 
 #######################################################
 ###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
@@ -215,6 +202,7 @@ ttf-hack
 ttf-roboto
 
 ###Theming
+beautyline
 latte-dock
 kvantum-qt5
 arc-icon-theme
@@ -223,7 +211,6 @@ arc-icon-theme
 arandr
 asciinema
 assimp
-autofs
 baobab
 boost
 cblas
@@ -242,7 +229,7 @@ fuseiso
 git
 gksu
 glib2-docs
-gparted
+gnome-disk-utility
 graphviz
 gtest
 gtk-doc
@@ -275,7 +262,6 @@ playerctl
 polkit
 dbus-python
 python2-pyxdg
-rxvt-unicode
 speedtest-cli
 tree
 gufw
@@ -413,6 +399,7 @@ ttf-ms-fonts
 ###tools
 
 android-tools
+grub-tools
 mkinitcpio-openswap
 variety
 
@@ -626,3 +613,4 @@ keditbookmarks
 arcolinux-sddm-futuristic-git
 arcolinux-mirrorlist-git
 arcolinux-keyring
+xerolinux-keyring
