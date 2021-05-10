@@ -188,7 +188,6 @@ feh
 gmrun
 imagemagick
 numlockx
-scrot
 
 ###conky
 jq
@@ -208,7 +207,6 @@ kvantum-qt5
 arc-icon-theme
 
 ###utilities
-arandr
 asciinema
 assimp
 baobab
@@ -279,10 +277,8 @@ vnstat
 w3m
 webkit2gtk
 wmctrl
-xapps
 xdo
 xdotool
-xfce4-dev-tools
 zenity
 zip
 
@@ -298,7 +294,6 @@ gst-plugin-pipewire
 ## Pulse Audio
 
 #pulseaudio
-#pulseeffects
 #pulseaudio-alsa
 #pulseaudio-bluetooth
 #pulseaudio-qt
@@ -324,11 +319,8 @@ bluez-utils
 
 avahi
 nss-mdns
-mobile-broadband-provider-info
 modemmanager
 net-tools
-networkmanager
-network-manager-applet
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
@@ -417,7 +409,6 @@ inetutils
 inxi
 lolcat
 lshw
-mintstick-git
 pamac-all
 paru-bin
 arcolinux-paru-git
@@ -426,7 +417,6 @@ synapse
 sysprof
 systemd-manager
 timeshift
-trizen
 yad
 yakuake
 
@@ -523,8 +513,6 @@ packagekit-qt5
 pacman-contrib
 systemd-kcm
 ocs-url
-kde-gtk-config
-sddm-kcm
 cryfs
 encfs
 gocryptfs
@@ -544,11 +532,9 @@ ark
 kate
 kgpg
 kfind
-kwrite
 kdialog
 konsole
 sweeper
-filelight
 itinerary
 kio-extras
 ksystemlog
@@ -571,7 +557,6 @@ okular
 svgpart
 gwenview
 spectacle
-kolourpaint
 kcolorchooser
 kdegraphics-mobipocket
 kdegraphics-thumbnailers
@@ -597,10 +582,8 @@ kmousetool
 
 ## Complements
 
-krdc
 krfb
 kruler
-kopete
 xsettingsd
 systemdgenie
 gnome-keyring
