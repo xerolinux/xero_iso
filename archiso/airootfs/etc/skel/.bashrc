@@ -105,7 +105,7 @@ alias reft='sudo systemctl enable reflector.service reflector.timer && sudo syst
 
 #quickly kill stuff
 alias kc='killall conky'
-alias kdc='echo 'Hidden=true' >> ~/.config/autostart/org.kde.discover.notifier.desktop'
+alias kpd='killall pamac-daemon'
 
 #Mount Retro Share
 alias retro='sudo mount -t cifs -o username=techxero,password=m7pi56qe,uid=1000,gid=1000 //192.168.1.78/Data /mnt/Retro'
