@@ -2,28 +2,29 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 alsa-utils
 amd-ucode
-archinstall
+#archinstall
 arch-install-scripts
-b43-fwcutter
+#b43-fwcutter
 base
 bind-tools
-brltty
+#brltty
 broadcom-wl
 btrfs-progs
 clonezilla
-cloud-init
+#cloud-init
 crda
 darkhttpd
 ddrescue
 dhclient
 dhcpcd
+dialog
 diffutils
 dmraid
 dnsmasq
 dosfstools
 edk2-shell
 efibootmgr
-espeakup
+#espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -33,8 +34,8 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
-grub
+#grml-zsh-config
+haveged
 hdparm
 intel-ucode
 ipw2100-fw
@@ -43,16 +44,16 @@ irssi
 iwd
 jfsutils
 kitty-terminfo
+#lftp
 libfido2
 libusb-compat
-lftp
 linux
 linux-atm
 linux-firmware
-livecd-sounds
+#livecd-sounds
 lsscsi
 lvm2
-lynx
+#lynx
 man-db
 man-pages
 mc
@@ -70,6 +71,7 @@ nfs-utils
 nilfs-utils
 nmap
 ntfs-3g
+ntp
 nvme-cli
 openconnect
 openssh
@@ -92,7 +94,7 @@ sof-firmware
 squashfs-tools
 sudo
 syslinux
-systemd-resolvconf
+#systemd-resolvconf
 tcpdump
 terminus-font
 termite-terminfo
@@ -176,6 +178,7 @@ xmlto
 yaml-cpp
 
 ##### you can also use nmtui from the terminal
+firewalld
 networkmanager
 network-manager-applet
 
@@ -214,6 +217,7 @@ boost
 cblas
 cifs-utils
 cmake
+cronie
 dconf-editor
 dmidecode
 edid-decode-git
@@ -234,6 +238,7 @@ gtk-doc
 gts
 hardinfo
 hddtemp
+htop
 hw-probe
 grsync
 intltool
@@ -262,7 +267,6 @@ dbus-python
 python2-pyxdg
 speedtest-cli
 tree
-gufw
 qt5-3d
 rhash
 s3fs-fuse
@@ -320,6 +324,7 @@ bluez-utils
 avahi
 nss-mdns
 modemmanager
+mobile-broadband-provider-info
 net-tools
 networkmanager-openconnect
 networkmanager-openvpn
@@ -435,7 +440,9 @@ neofetch
 
 #driver for virtualbox 
 open-vm-tools
+xf86-video-vmware
 virtualbox-guest-utils
+iptables-nft
 
 ##### sddm display manager
 

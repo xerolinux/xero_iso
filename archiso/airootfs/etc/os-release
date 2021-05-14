@@ -1,0 +1,9 @@
+NAME="XeroLinux"
+PRETTY_NAME="XeroLinux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://xerolinux.github.io/"
+LOGO=xerolinux
+IMAGE_ID=xerolinux
+IMAGE_VERSION=2021.05.06

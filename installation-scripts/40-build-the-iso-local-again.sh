@@ -194,6 +194,9 @@ echo
  	oldname1='ArchLinux'
  	newname1='XeroLinux'
 
+ 	oldname2='Arch Linux'
+ 	newname2='XeroLinux'
+
  	echo "Changing all references"
  	echo
  	sed -i 's/'$oldname1'/'$newname1'/g' $buildFolder/archiso/airootfs/etc/dev-rel
@@ -216,7 +219,6 @@ echo
 	[ -d $outFolder ] || mkdir $outFolder
 	cd $buildFolder/archiso/
 	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
-
 
 # echo
 # echo "###################################################################"
