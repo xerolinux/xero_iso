@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 echo
 echo "#################################"
 echo "Start xerolinux-final"
@@ -21,6 +21,11 @@ rm -rf /etc/systemd/system/getty@tty1.service.d
 echo "Setting editor to nano"
 echo "#################################"
 echo "EDITOR=nano" >> /etc/profile
+
+echo "Bluetooth improvements"
+echo "#################################"
+sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf
+echo 'load-module module-switch-on-connect' | sudo tee --append /etc/pulse/default.pa
 
 #Original cleanup
 echo "Cleanup original files"

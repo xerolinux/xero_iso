@@ -28,6 +28,7 @@ automated_script ()
         fi
     fi
 }
+
 if [[ $(tty) == "/dev/tty1" ]]; then
     automated_script
 fi

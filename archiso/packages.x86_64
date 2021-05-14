@@ -1,30 +1,33 @@
-#
-# SPDX-License-Identifier: GPL-3.0-or-later
+#####################################################################
+##                            PACKAGES AVAILABLE
+#####################################################################
+
+###archiso
 alsa-utils
 amd-ucode
 #archinstall
 arch-install-scripts
-#b43-fwcutter
+b43-fwcutter
 base
 bind-tools
-#brltty
+brltty
 broadcom-wl
 btrfs-progs
 clonezilla
-#cloud-init
+cloud-init
 crda
 darkhttpd
 ddrescue
 dhclient
 dhcpcd
-dialog
 diffutils
 dmraid
 dnsmasq
 dosfstools
+e2fsprogs
 edk2-shell
 efibootmgr
-#espeakup
+espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -34,26 +37,27 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-#grml-zsh-config
-haveged
+grml-zsh-config
 hdparm
 intel-ucode
 ipw2100-fw
 ipw2200-fw
 irssi
+iw
 iwd
 jfsutils
 kitty-terminfo
-#lftp
+less
+lftp
 libfido2
 libusb-compat
 linux
 linux-atm
 linux-firmware
-#livecd-sounds
+livecd-sounds
 lsscsi
 lvm2
-#lynx
+lynx
 man-db
 man-pages
 mc
@@ -71,7 +75,6 @@ nfs-utils
 nilfs-utils
 nmap
 ntfs-3g
-ntp
 nvme-cli
 openconnect
 openssh
@@ -83,10 +86,12 @@ partimage
 pcsclite
 ppp
 pptpclient
+qemu-guest-agent
 reflector
 reiserfsprogs
 rp-pppoe
 rsync
+screen
 sdparm
 sg3_utils
 smartmontools
@@ -94,7 +99,7 @@ sof-firmware
 squashfs-tools
 sudo
 syslinux
-#systemd-resolvconf
+systemd-resolvconf
 tcpdump
 terminus-font
 termite-terminfo
@@ -115,16 +120,40 @@ xfsprogs
 xl2tpd
 zsh
 
+###archiso-extra
+dialog
+dnsutils
+grub
+haveged
+logrotate
+ntp
+wget
 
 # everything above comes from archiso releng folder
 #######################################################
 ###                    ALCI                         ###
 #######################################################
 
-#######################################################
-###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
-###             VIA CALAMARES CONFIG                ###
-#######################################################
+###video
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+#xf86-input-synaptics
+xf86-input-vmmouse
+xf86-input-void
+xf86-video-amdgpu
+xf86-video-ati
+#xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-qxl
+xf86-video-vesa
+xf86-video-vmware
+#xf86-video-voodoo
+#xf86-video-sisusb
+mesa
 
 xero-calamares
 xl-calamares-config
@@ -147,7 +176,8 @@ xorg-xrdb
 ###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
 #######################################################
 
-## Essentials
+###LUKS encryption
+cryptsetup
 
 aic94xx-firmware
 wd719x-firmware
@@ -178,7 +208,6 @@ xmlto
 yaml-cpp
 
 ##### you can also use nmtui from the terminal
-firewalld
 networkmanager
 network-manager-applet
 
@@ -210,6 +239,7 @@ kvantum-qt5
 arc-icon-theme
 
 ###utilities
+arandr
 asciinema
 assimp
 baobab
@@ -230,7 +260,7 @@ fuse3
 fuseiso
 git
 gksu
-glib2-docs
+#glances
 gnome-disk-utility
 graphviz
 gtest
@@ -438,7 +468,7 @@ neofetch
 
 ##### Drivers for graphical cards
 
-#driver for virtualbox 
+#driver for virtualbox
 open-vm-tools
 xf86-video-vmware
 virtualbox-guest-utils
