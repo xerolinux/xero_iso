@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;application/octet-stream;
+Icon=meld
+Actions=setArg1;diff;_SEPARATOR_;selected;
+X-KDE-Priority=TopLevel
+
+[Desktop Action selected]
+Name=Compare
+Icon=meld
+Exec=meld %U; rm /tmp/meld-menu-arg1;

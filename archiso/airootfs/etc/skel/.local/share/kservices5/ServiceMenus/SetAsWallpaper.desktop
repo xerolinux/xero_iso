@@ -1,0 +1,26 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/*;
+Actions=SetAsWallpaper;
+X-KDE-Priority=TopLevel
+X-KDE-StartupNotify=false
+
+[Desktop Action SetAsWallpaper]
+Icon=preferences-desktop-wallpaper
+Name=Set as Wallpaper
+Name[ar]=تعيين كخلفية سطح المكتب
+Name[cn]=设置为桌面背景
+Name[de]=Als Desktophintergrund festlegen
+Name[en]=Set as desktop background
+Name[es]=Establecer como fondo de escritorio
+Name[fr]=Choisir comme arrière-plan du Bureau
+Name[hi_IN]=डेस्कटॉप पृष्ठभूमि के रूप में सेट करें
+Name[id]=Definir como fundo de ambiente de trabalho
+Name[it]=Imposta come sfondo del desktop
+Name[jp]=デスクトップの背景として設定
+Name[pl]=Ustaw jako tło pulpitu
+Name[pt]=Definir como fundo de ambiente de trabalho
+Name[ru]=Сделать фоновым изображением рабочего стола
+Name[ua]=Установити як фон робочого стола
+Exec=qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = "org.kde.image";d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");d.writeConfig("Image", "%u")}'; 
