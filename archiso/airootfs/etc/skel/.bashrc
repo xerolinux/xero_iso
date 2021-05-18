@@ -202,6 +202,9 @@ alias ssn="sudo shutdown now"
 #Load changes to ./bashrc
 alias nbash='source ~/.bashrc'
 
+#Fix KVM Resolition
+alias vset='xrandr -s 1920x1080'
+
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
 ex ()

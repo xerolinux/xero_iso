@@ -86,7 +86,6 @@ partimage
 pcsclite
 ppp
 pptpclient
-qemu-guest-agent
 reflector
 reiserfsprogs
 rp-pppoe
@@ -110,7 +109,6 @@ udftools
 usb_modeswitch
 usbmuxd
 usbutils
-vim
 vpnc
 wireless-regdb
 wireless_tools
@@ -135,25 +133,10 @@ wget
 #######################################################
 
 ###video
-xf86-input-elographics
-xf86-input-evdev
-xf86-input-libinput
-#xf86-input-synaptics
-xf86-input-vmmouse
-xf86-input-void
-xf86-video-amdgpu
-xf86-video-ati
-#xf86-video-dummy
-xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-openchrome
+mesa
 xf86-video-qxl
 xf86-video-vesa
 xf86-video-vmware
-#xf86-video-voodoo
-#xf86-video-sisusb
-mesa
 
 xero-calamares
 xl-calamares-config
@@ -233,10 +216,12 @@ ttf-hack
 ttf-roboto
 
 ###Theming
-beautyline
-latte-dock
-kvantum-qt5
 arc-icon-theme
+arcolinux-plank-themes-git
+beautyline
+kvantum-qt5
+plank
+
 
 ###utilities
 arandr
@@ -279,6 +264,7 @@ laptop-detect
 lhasa
 lsb-release
 lzop
+meld
 meson
 mlocate
 netpbm
@@ -315,6 +301,14 @@ xdo
 xdotool
 zenity
 zip
+
+## Thunar AiO
+
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-shares-plugin
+thunar-volman
 
 ## G-Streamer
 
@@ -392,7 +386,6 @@ poppler-qt5
 xf86-input-libinput
 xf86-input-vmmouse
 xf86-input-void
-mesa
 
 # Python & Libs
 
@@ -466,13 +459,11 @@ xorg-apps
 xorg-xinit
 neofetch
 
-##### Drivers for graphical cards
+##### driver for virtualmachines
 
-#driver for virtualbox
 open-vm-tools
-xf86-video-vmware
+qemu-guest-agent
 virtualbox-guest-utils
-iptables-nft
 
 ##### sddm display manager
 
