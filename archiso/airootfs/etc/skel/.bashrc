@@ -95,7 +95,7 @@ alias vpd='sudo ventoy -u -s /dev/sde'
 alias fc="sudo fc-cache -fv"
 
 #get fastest mirrors in your neighborhood
-alias reflector='arcolinux-reflector-simple'
+alias rsimp='arcolinux-reflector-simple'
 alias mirrorr="rate-arch-mirrors | sudo tee /etc/pacman.d/mirrorlist"
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"

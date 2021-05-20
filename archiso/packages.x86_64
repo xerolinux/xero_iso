@@ -222,7 +222,6 @@ beautyline
 kvantum-qt5
 plank
 
-
 ###utilities
 arandr
 asciinema
@@ -243,11 +242,13 @@ file-roller
 fuse2
 fuse3
 fuseiso
+galculator
 git
 gksu
 #glances
 gnome-disk-utility
 graphviz
+grsync
 gtest
 gtk-doc
 gts
@@ -255,7 +256,6 @@ hardinfo
 hddtemp
 htop
 hw-probe
-grsync
 intltool
 iw
 jsoncpp
@@ -432,6 +432,7 @@ archiso
 bleachbit
 downgrade
 glxinfo
+grub-customizer
 hardcode-fixer-git
 inetutils
 inxi
@@ -463,7 +464,7 @@ neofetch
 
 open-vm-tools
 qemu-guest-agent
-virtualbox-guest-utils
+virtualbox-guest-utils-nox
 
 ##### sddm display manager
 

@@ -41,6 +41,12 @@ echo "#################################"
 chmod -v 750 /root
 
 echo "#################################"
+echo "Enable Reflector Service"
+echo "#################################"
+systemctl enable reflector.service reflector.timer
+systemctl start reflector.service reflector.timer
+
+echo "#################################"
 echo "Enable Bluetooth Service"
 echo "#################################"
 systemctl enable bluetooth.service
