@@ -22,11 +22,6 @@ echo "Setting editor to nano"
 echo "#################################"
 echo "EDITOR=nano" >> /etc/profile
 
-echo "Bluetooth improvements"
-echo "#################################"
-sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf
-echo 'load-module module-switch-on-connect' | sudo tee --append /etc/pulse/default.pa
-
 #Original cleanup
 echo "Cleanup original files"
 echo "#################################"
@@ -39,18 +34,6 @@ mv /etc/xerolinux-release /etc/lsb-release
 echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
-
-echo "#################################"
-echo "Enable Reflector Service"
-echo "#################################"
-systemctl enable reflector.service reflector.timer
-systemctl start reflector.service reflector.timer
-
-echo "#################################"
-echo "Enable Bluetooth Service"
-echo "#################################"
-systemctl enable bluetooth.service
-systemctl start --now bluetooth.service
 
 echo "#################################"
 echo "End xerolinux-final"

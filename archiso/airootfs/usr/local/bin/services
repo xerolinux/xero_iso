@@ -1,0 +1,31 @@
+#!/bin/bash
+echo
+echo "#################################"
+echo "Start Services"
+echo "#################################"
+
+echo "Permission of root"
+echo "#################################"
+chmod -v 750 /root
+
+echo "#################################"
+echo "Enable Reflector Service"
+echo "#################################"
+systemctl enable reflector.service && systemctl start reflector.service
+systemctl enable reflector.timer && systemctl start reflector.timer
+
+echo "#################################"
+echo "Enable Bluetooth Service"
+echo "#################################"
+systemctl enable bluetooth.service
+systemctl start --now bluetooth.service
+
+echo "Bluetooth improvements"
+echo "#################################"
+sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf
+echo 'load-module module-switch-on-connect' | sudo tee --append /etc/pulse/default.pa
+
+echo "#################################"
+echo "End xerolinux-final"
+echo "#################################"
+rm /usr/local/bin/services

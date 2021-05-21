@@ -217,10 +217,9 @@ ttf-roboto
 
 ###Theming
 arc-icon-theme
-arcolinux-plank-themes-git
 beautyline
 kvantum-qt5
-plank
+latte-dock
 
 ###utilities
 arandr
@@ -418,7 +417,6 @@ ttf-ms-fonts
 
 ###tools
 
-android-tools
 grub-tools
 mkinitcpio-openswap
 variety
