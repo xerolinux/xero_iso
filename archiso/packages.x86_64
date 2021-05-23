@@ -211,6 +211,9 @@ lm_sensors
 ###fonts
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
+noto-fonts-emoji
+otf-libertinus
+tex-gyre-fonts
 ttf-droid
 ttf-hack
 ttf-roboto
@@ -429,7 +432,6 @@ appstream
 archiso
 bleachbit
 downgrade
-glxinfo
 grub-customizer
 hardcode-fixer-git
 inetutils

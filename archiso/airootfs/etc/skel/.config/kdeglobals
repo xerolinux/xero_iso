@@ -139,11 +139,12 @@ ColorScheme=BreezeDark
 Name=Breeze Dark
 XftHintStyle=hintslight
 XftSubPixel=rgb
-font=Droid Sans,10,-1,5,50,0,0,0,0,0
-menuFont=Droid Sans,10,-1,5,50,0,0,0,0,0
+fixed=Libertinus Serif,10,-1,5,50,0,0,0,0,0
+font=TeX Gyre Heros,10,-1,5,50,0,0,0,0,0
+menuFont=TeX Gyre Heros,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Droid Sans,8,-1,5,50,0,0,0,0,0
-toolBarFont=Droid Sans,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=TeX Gyre Heros,8,-1,5,50,0,0,0,0,0
+toolBarFont=TeX Gyre Heros,10,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
@@ -179,7 +180,7 @@ View Style=DetailTree
 [WM]
 activeBackground=49,54,59
 activeBlend=252,252,252
-activeFont=Droid Sans,10,-1,5,50,0,0,0,0,0
+activeFont=TeX Gyre Heros,10,-1,5,50,0,0,0,0,0
 activeForeground=252,252,252
 inactiveBackground=42,46,50
 inactiveBlend=161,169,177

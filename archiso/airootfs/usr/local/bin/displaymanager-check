@@ -18,6 +18,12 @@
 package=sddm
 if pacman -Qs $package > /dev/null ; then
   ln -sf /usr/lib/systemd/system/sddm.service /etc/systemd/system/display-manager.service
+  rm -Rf /etc/lightdm
+fi
+
+package=lightdm
+if pacman -Qs $package > /dev/null ; then
+  ln -sf /usr/lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service
 fi
 
 echo "#################################"

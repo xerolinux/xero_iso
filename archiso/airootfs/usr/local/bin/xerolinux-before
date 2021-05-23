@@ -22,6 +22,10 @@ echo "Changing into our own linux.preset"
 echo "#################################"
 mv /etc/mkinitcpio.d/arcolinux /etc/mkinitcpio.d/linux.preset
 
+echo "Removing /etc/sddm.conf"
+echo "#################################"
+rm -f /etc/sddm.conf
+
 #cleanup
 for i in `ls /home/`; do rm -rf /home/$i/.config/* || exit 0; done
 

@@ -99,7 +99,7 @@ ToolBoxButtonX=509
 ToolBoxButtonY=36
 
 [Containments][22][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
+Image=file:///usr/local/share/xero-walls/wall52.jpg
 
 [Containments][8]
 activityId=

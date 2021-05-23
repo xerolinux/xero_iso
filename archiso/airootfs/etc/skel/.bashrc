@@ -24,22 +24,18 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-#Build ArcoISO
-alias bc='./30-build-the-iso-the-first-time.sh'
-alias bd='./40-build-the-iso-local-again.sh'
-
 #iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
+
+#switch between lightdm and sddm
+alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
+alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
 
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
 
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
-
-#Weather
-alias wbm='wttr Beit-Meri'
-alias wdxb='wttr Dubai'
 
 #list
 alias ls='ls --color=auto'
@@ -57,9 +53,11 @@ alias free="free -mt"
 #continue download
 alias wget="wget -c"
 
-#Manjaro To Unstable Branch
-alias archify='sudo pacman-mirrors --api --set-branch unstable'
-alias arctivate='sudo pacman-mirrors --fasttrack 5 && sudo pacman -Syyu'
+#readable output
+alias df='df -h'
+
+#userlist
+alias userlist="cut -d: -f1 /etc/passwd"
 
 #Pacman for software managment
 alias search='sudo pacman -Qs'
@@ -87,10 +85,6 @@ alias fpup='flatpak update'
 #grub update
 alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-#Ventoy Create/Update (Change to actual disk)
-alias vpc='sudo ventoy -i -s /dev/sde'
-alias vpd='sudo ventoy -u -s /dev/sde'
-
 #add new fonts
 alias fc="sudo fc-cache -fv"
 
@@ -105,10 +99,6 @@ alias reft='sudo systemctl enable reflector.service reflector.timer && sudo syst
 
 #quickly kill stuff
 alias kc='killall conky'
-alias kpd='killall pamac-daemon'
-
-#Mount Retro Share
-alias retro='sudo mount -t cifs -o username=techxero,password=m7pi56qe,uid=1000,gid=1000 //192.168.1.78/Data /mnt/Retro'
 
 #mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Public /home/$USER/Public"
@@ -151,6 +141,7 @@ alias scpd='sudo cp -R'
 
 #Recent Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
+alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
 #Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
@@ -182,10 +173,6 @@ alias linux='cd /mnt/Linux'
 alias sapps='cd /usr/share/applications'
 alias lapps='cd ~/.local/share/applications'
 
-#Update Xonotic
-alias xupdate='xudir && ./update-to-release.sh'
-alias xudir='cd /mnt/Linux/GOG/Xonotic/misc/tools/rsync-updater/'
-
 #verify signature for isos
 alias gpgchk='gpg2 --keyserver-options auto-key-retrieve --verify'
 alias gpgfx='gpg2 --keyserver-options auto-key-retrieve --verify'
@@ -194,6 +181,9 @@ alias gpgfx='gpg2 --keyserver-options auto-key-retrieve --verify'
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
+
+#get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
 
 #shutdown or reboot
 alias sr="sudo reboot"
