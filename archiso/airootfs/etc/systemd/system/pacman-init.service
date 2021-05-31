@@ -12,7 +12,6 @@ RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
 ExecStart=/usr/bin/pacman-key --populate archlinux
 ExecStart=/usr/bin/pacman-key --populate arcolinux
-ExecStart=/usr/bin/pacman-key --populate xerolinux
 
 [Install]
 WantedBy=multi-user.target

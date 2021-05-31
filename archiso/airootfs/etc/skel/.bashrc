@@ -28,8 +28,12 @@ fi
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 
 #switch between lightdm and sddm
+alias nldm="sudo nano /etc/lightdm/lightdm.conf"
 alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
 alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
+
+## Modify Grub-BTRFS
+alias ngbt='sudo nano /etc/default/grub-btrfs/config'
 
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
@@ -91,10 +95,7 @@ alias fc="sudo fc-cache -fv"
 #get fastest mirrors in your neighborhood
 alias rsimp='arcolinux-reflector-simple'
 alias mirrorr="rate-arch-mirrors | sudo tee /etc/pacman.d/mirrorlist"
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias rfgrfr='reflector --country France --country Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
 alias reft='sudo systemctl enable reflector.service reflector.timer && sudo systemctl start reflector.service reflector.timer'
 
 #quickly kill stuff

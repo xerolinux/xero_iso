@@ -3,7 +3,7 @@
 
 iso_name="xerolinux"
 iso_label="XEROLINUX_$(date +%Y%m)"
-iso_publisher="XeroLinux <https://techxero.github.io>"
+iso_publisher="XeroLinux <https://xerolinux.online>"
 iso_application="XeroLinux Live/Rescue CD"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
@@ -23,6 +23,7 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/vcheck"]="0:0:755"
+  ["/usr/local/bin/xerokeys"]="0:0:755"
   ["/usr/local/bin/vbox-share"]="0:0:755"
   ["/usr/local/bin/displaymanager-check"]="0:0:755"
   ["/usr/local/bin/xerolinux-before"]="0:0:755"

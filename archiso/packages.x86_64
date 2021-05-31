@@ -27,7 +27,7 @@ dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
-espeakup
+#espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -54,7 +54,7 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
-livecd-sounds
+#livecd-sounds
 lsscsi
 lvm2
 lynx
@@ -86,6 +86,7 @@ partimage
 pcsclite
 ppp
 pptpclient
+pv
 reflector
 reiserfsprogs
 rp-pppoe
@@ -295,6 +296,7 @@ unace
 unrar
 unzip
 vala
+vi
 vnstat
 w3m
 webkit2gtk
@@ -625,4 +627,3 @@ keditbookmarks
 arcolinux-sddm-futuristic-git
 arcolinux-mirrorlist-git
 arcolinux-keyring
-xerolinux-keyring
