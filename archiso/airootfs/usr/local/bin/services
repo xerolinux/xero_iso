@@ -26,6 +26,18 @@ sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf
 echo 'load-module module-switch-on-connect' | sudo tee --append /etc/pulse/default.pa
 
 echo "#################################"
+echo "Enable Open-VM Tools Service"
+echo "#################################"
+systemctl enable vmtoolsd.service
+systemctl start --now vmtoolsd.service
+
+echo "#################################"
+echo "Enable VM-Block Service"
+echo "#################################"
+systemctl enable vmware-vmblock-fuse.service
+systemctl start --now vmware-vmblock-fuse.service
+
+echo "#################################"
 echo "End xerolinux-final"
 echo "#################################"
 rm /usr/local/bin/services

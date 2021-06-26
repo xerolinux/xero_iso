@@ -48,7 +48,7 @@ iwd
 jfsutils
 kitty-terminfo
 less
-lftp
+#lftp
 libfido2
 libusb-compat
 linux
@@ -434,13 +434,11 @@ appstream
 archiso
 bleachbit
 downgrade
-grub-customizer
 hardcode-fixer-git
 inetutils
 inxi
 lolcat
 lshw
-pamac-all
 paru-bin
 arcolinux-paru-git
 python-pyparted
@@ -449,7 +447,6 @@ sysprof
 systemd-manager
 timeshift
 yad
-yakuake
 
 #######################################################
 ###                    EXTRAS                       ###
@@ -499,7 +496,6 @@ khotkeys
 sddm-kcm
 kmenuedit
 bluedevil
-ksysguard
 breeze-gtk
 powerdevil
 libkscreen
@@ -534,6 +530,7 @@ plasma-framework
 plasma-workspace
 plasma-integration
 plasma-thunderbolt
+plasma-systemmonitor
 plasma-browser-integration
 plasma-workspace-wallpapers
 
@@ -607,7 +604,6 @@ kdesdk-thumbnailers
 
 ## Accessibility
 
-kmouth
 kontrast
 kmousetool
 
