@@ -56,3 +56,6 @@ GRUB_THEME="/boot/grub/themes/DaftPunk/theme.txt"
 # Uncomment to make GRUB remember the last selection. This requires
 # setting 'GRUB_DEFAULT=saved' above.
 GRUB_SAVEDEFAULT="true"
+
+# Set this to 'true' if you only running one OS otherwise leave as 'false'
+GRUB_DISABLE_OS_PROBER=false
