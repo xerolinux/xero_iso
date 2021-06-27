@@ -126,6 +126,7 @@ grub
 haveged
 logrotate
 ntp
+rust
 wget
 
 # everything above comes from archiso releng folder
