@@ -132,6 +132,9 @@ alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias yt='youtube-dl --recode-video mp4'
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
+#GiT  command
+alias gc='git clone '
+
 #Copy/Remove files/dirs
 alias rmd='rm -r'
 alias srm='sudo rm'
