@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 30 30"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="focus_over.svg"
+   inkscape:export-filename="/home/naman/Documents/breeze_dark/title/focus_over.png"
+   inkscape:export-xdpi="89.800003"
+   inkscape:export-ydpi="89.800003">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1332"
+     inkscape:window-height="815"
+     id="namedview10"
+     showgrid="false"
+     inkscape:zoom="7.8666667"
+     inkscape:cx="-25.932203"
+     inkscape:cy="15"
+     inkscape:window-x="-4"
+     inkscape:window-y="155"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g4" />
+  <g
+     transform="translate(-549.72-579.12)"
+     id="g4">
+    <path
+       d="m 564.72,585.12 c -4.97025,0 -9,4.02975 -9,9 0,4.97025 4.02975,9 9,9 4.97025,0 9,-4.02975 9,-9 0,-4.97025 -4.02975,-9 -9,-9 z m -3,2.50586 6,0 0,7 2,0 0,2 -2,0 -2,0 0,4 -2,0 0,-4 -2,0 -2,0 0,-2 2,0 0,-7 z"
+       id="path6"
+       style="fill:#eff0f1;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="89.800003"
+       inkscape:export-ydpi="89.800003" />
+  </g>
+</svg>

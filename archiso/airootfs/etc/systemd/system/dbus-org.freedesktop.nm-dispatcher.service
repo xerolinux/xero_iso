@@ -1,15 +1,1 @@
-[Unit]
-Description=Network Manager Script Dispatcher Service
-
-[Service]
-Type=dbus
-BusName=org.freedesktop.nm_dispatcher
-ExecStart=/usr/lib/nm-dispatcher
-
-# We want to allow scripts to spawn long-running daemons, so tell
-# systemd to not clean up when nm-dispatcher exits
-KillMode=process
-
-[Install]
-Alias=dbus-org.freedesktop.nm-dispatcher.service
-
+/usr/lib/systemd/system/NetworkManager-dispatcher.service

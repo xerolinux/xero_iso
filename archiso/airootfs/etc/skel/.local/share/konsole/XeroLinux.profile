@@ -1,9 +1,9 @@
 [Appearance]
 AntiAliasFonts=true
 BoldIntense=true
-ColorScheme=Breeze
+ColorScheme=Sweet
 DimmValue=128
-Font=Libertinus Mono,10,-1,5,50,0,0,0,0,0
+Font=xos4 Terminus,11,-1,5,50,0,0,0,0,0
 LineSpacing=0
 TabColor=invalid
 UseFontLineChararacters=false

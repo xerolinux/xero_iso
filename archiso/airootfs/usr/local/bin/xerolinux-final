@@ -22,6 +22,12 @@ echo "Setting editor to nano"
 echo "#################################"
 echo "EDITOR=nano" >> /etc/profile
 
+echo "#################################"
+echo "Enable QEMU Service"
+echo "#################################"
+systemctl enable qemu-guest-agent.service
+systemctl start --now qemu-guest-agent.service
+
 #Original cleanup
 echo "Cleanup original files"
 echo "#################################"

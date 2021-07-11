@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+echo "################################################################################################"
+echo "##########################   Unlocking Sublime Text Dev Ver!!    ###############################"
+echo "################################################################################################"
+sleep 3
+cd /opt/sublime_text
+printf '\x48\x31\xC0\xC3'                 | dd of=sublime_text bs=1 seek=$((0x003657B2)) conv=notrunc
+
+printf '\x90\x90\x90\x90\x90'             | dd of=sublime_text bs=1 seek=$((0x0035BD56)) conv=notrunc
+printf '\x90\x90\x90\x90\x90'             | dd of=sublime_text bs=1 seek=$((0x0035BD3B)) conv=notrunc
+
+printf '\x48\x31\xC0\x48\xFF\xC0\xC3'     | dd of=sublime_text bs=1 seek=$((0x003672AB)) conv=notrunc
+
+printf '\xC3'                             | dd of=sublime_text bs=1 seek=$((0x00365504)) conv=notrunc
+
+printf '\xC3'                             | dd of=sublime_text bs=1 seek=$((0x0034F660)) conv=notrunc
+sleep 3
+echo "################################################################################################"
+echo "##########################   Done! Enter Your Name In Reg Box    ###############################"
+echo "################################################################################################"
+sleep 5

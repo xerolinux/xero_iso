@@ -305,6 +305,7 @@ webkit2gtk
 wmctrl
 xdo
 xdotool
+yakuake
 zenity
 zip
 
@@ -337,10 +338,10 @@ gst-plugin-pipewire
 
 ## Pipewire Audio
 
-pipewire
-pipewire-alsa
-pipewire-jack
-pipewire-pulse
+#pipewire
+#pipewire-alsa
+#pipewire-jack
+#pipewire-pulse
 
 ###bluetooth
 
@@ -426,7 +427,7 @@ ttf-ms-fonts
 
 grub-tools
 mkinitcpio-openswap
-variety
+
 
 ###utilities
 

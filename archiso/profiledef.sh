@@ -28,11 +28,13 @@ file_permissions=(
   ["/usr/local/bin/displaymanager-check"]="0:0:755"
   ["/usr/local/bin/xerolinux-before"]="0:0:755"
   ["/usr/local/bin/skel"]="0:0:755" 
+  ["/usr/local/bin/keyfix"]="0:0:755"
   ["/usr/local/bin/all-cores"]="0:0:755"
   ["/usr/local/bin/xerolinux-final"]="0:0:755"
   ["/usr/local/bin/smb"]="0:0:755"
   ["/usr/local/bin/qemu-vm"]="0:0:755"
   ["/usr/local/bin/services"]="0:0:755"
   ["/usr/local/bin/grubfix"]="0:0:755"
+  ["/usr/local/bin/subfix"]="0:0:755"
   ["/usr/local/bin/starwars"]="0:0:755"
   )

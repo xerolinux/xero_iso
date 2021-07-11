@@ -1,2 +1,23 @@
+[Appearance]
+BackgroundColorOpacity=15
+HideSkinBorders=true
+Skin=breeze_dark
+SkinInstalledWithKns=true
+Translucency=true
+
+[Desktop Entry]
+DefaultProfile=XeroLinux.profile
+
 [Dialogs]
 FirstRun=false
+
+[FileDialogSize]
+DP-2 HDMI-0 HDMI-1 Height 2560x1440=781
+DP-2 HDMI-0 HDMI-1 Width 2560x1440=1298
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[Window]
+Height=40
+Width=60

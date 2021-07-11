@@ -1,0 +1,8 @@
+[FileDialogSize]
+DP-2 HDMI-0 HDMI-1 Height 2560x1440=781
+DP-2 HDMI-0 HDMI-1 Width 2560x1440=1298
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Pictures/wallhaven-oxvxgm.jpg,file:$HOME/Pictures/wallhaven-oxvxgm.jpg
+Recent URLs[$e]=file:$HOME/Pictures/
+detailViewIconSize=16

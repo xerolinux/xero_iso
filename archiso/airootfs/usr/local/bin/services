@@ -9,16 +9,15 @@ echo "#################################"
 chmod -v 750 /root
 
 echo "#################################"
-echo "Enable Reflector Service"
-echo "#################################"
-systemctl enable reflector.service && systemctl start reflector.service
-systemctl enable reflector.timer && systemctl start reflector.timer
-
-echo "#################################"
 echo "Enable Bluetooth Service"
 echo "#################################"
 systemctl enable bluetooth.service
 systemctl start --now bluetooth.service
+
+echo "#################################"
+echo "Enable Network Service"
+echo "#################################"
+systemctl start NetworkManager.service
 
 echo "Bluetooth improvements"
 echo "#################################"
@@ -36,6 +35,12 @@ echo "Enable VM-Block Service"
 echo "#################################"
 systemctl enable vmware-vmblock-fuse.service
 systemctl start --now vmware-vmblock-fuse.service
+
+echo "#################################"
+echo "Enable QEMU Service"
+echo "#################################"
+systemctl enable qemu-guest-agent.service
+systemctl start --now qemu-guest-agent.service
 
 echo "#################################"
 echo "End xerolinux-final"

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 50 50"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>Qt SVG Document</title>
+<desc>Generated with Qt</desc>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" x1="45.0565" y1="513.015" x2="875.718" y2="547.948" id="gradient1">
+    <stop offset="0" stop-color="#f7f206" stop-opacity="1" />
+    <stop offset="1" stop-color="#ffbb24" stop-opacity="1" />
+</linearGradient>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="#e5c206" fill-opacity="1" stroke="none" transform="matrix(0.0548323,0,0,-0.0548323,-0.29158,50.0188)"
+font-family="TeX Gyre Heros" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M461.253,0.342218 C713.059,0.342218 917.189,204.472 917.189,456.28 C917.189,708.083 713.059,912.214 461.253,912.214 C209.448,912.214 5.31766,708.083 5.31766,456.28 C5.31766,204.472 209.448,0.342218 461.253,0.342218 "/>
+</g>
+
+<g fill="url(#gradient1)" stroke="none" transform="matrix(0.0548323,0,0,-0.0548323,-0.29158,50.0188)"
+font-family="TeX Gyre Heros" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="none" fill-rule="evenodd" d="M461.255,32.909 C695.074,32.909 884.62,222.457 884.62,456.28 C884.62,690.099 695.074,879.647 461.255,879.647 C227.438,879.647 37.8864,690.099 37.8864,456.28 C37.8864,222.457 227.438,32.909 461.255,32.909 "/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="TeX Gyre Heros" font-size="10" font-weight="400" font-style="normal" 
+>
+</g>
+</g>
+</svg>

@@ -1,3 +1,10 @@
+[ScreenConnectors]
+10=DP-1
+11=HDMI-1
+12=HDMI-2
+13=HDMI-0
+14=DP-2
+
 [UniversalSettings]
 badges3DStyle=false
 canDisableBorders=false

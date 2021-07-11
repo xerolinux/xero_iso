@@ -1,0 +1,21 @@
+#!/bin/bash
+#set -e
+echo "#################################"
+echo "Fixing Pacman Databases"
+echo "#################################"
+sleep 3
+echo "Deleting Existing Keys"
+echo "#################################"
+sudo rm /var/lib/pacman/sync/*
+sleep 3
+echo "Deleting gnupg files"
+echo "#################################"
+sudo rm -r /etc/pacman.d/gnupg/*
+sleep 3
+echo "Populating Keys anew"
+echo "#################################"
+sudo pacman-key --init && sudo pacman-key --populate
+sleep 3
+echo "#################################"
+echo "Done ! Please Try again & Report"
+echo "#################################"
