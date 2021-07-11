@@ -171,11 +171,11 @@ ToolBoxButtonX=846
 ToolBoxButtonY=36
 
 [Containments][22][Wallpaper][org.kde.image][General]
-Image=file:///home/liveuser/.local/share/wallpapers/XerroLinux.jpg
+Image=file:///home/liveuser/.local/share/wallpapers/XeroLinux.jpg
 SlidePaths=$HOME/.local/share/wallpapers,/usr/share/wallpapers
 
 [Containments][22][Wallpaper][org.kde.image][General]
-Image=/usr/share/defaultbg/XerroLinux.jpg
+Image=/usr/share/defaultbg/XeroLinux.jpg
 SlidePaths=/usr/share/defaultbg,$HOME/.local/share/wallpapers/
 
 [Containments][27]
