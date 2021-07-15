@@ -318,12 +318,12 @@ thunar-volman
 
 ## G-Streamer
 
-gstreamer
-gst-libav
-gst-plugins-base
-gst-plugins-bad
-gst-plugins-ugly
-gst-plugin-pipewire
+#gstreamer
+#gst-libav
+#gst-plugins-base
+#gst-plugins-bad
+#gst-plugins-ugly
+#gst-plugin-pipewire
 
 ## Pulse Audio
 
