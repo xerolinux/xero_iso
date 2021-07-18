@@ -1,9 +1,9 @@
 [Appearance]
 AntiAliasFonts=true
-BoldIntense=true
+BoldIntense=false
 ColorScheme=Sweet
 DimmValue=128
-Font=xos4 Terminus,11,-1,5,50,0,0,0,0,0
+Font=Terminus,11,-1,5,50,0,0,0,0,0
 LineSpacing=0
 TabColor=invalid
 UseFontLineChararacters=false

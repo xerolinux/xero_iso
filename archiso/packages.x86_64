@@ -497,6 +497,7 @@ kscreen
 khotkeys
 sddm-kcm
 kmenuedit
+ksysguard
 bluedevil
 breeze-gtk
 powerdevil
@@ -622,6 +623,5 @@ keditbookmarks
 
 ##### want to add/use the ArcoLinux repos
 
-arcolinux-sddm-futuristic-git
 arcolinux-mirrorlist-git
 arcolinux-keyring

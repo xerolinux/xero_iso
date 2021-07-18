@@ -1,7 +1,7 @@
 [Appearance]
-BackgroundColorOpacity=15
+BackgroundColorOpacity=75
 HideSkinBorders=true
-Skin=breeze_dark
+Skin=yakuake-breeze_perfect_dark-2.0
 SkinInstalledWithKns=true
 Translucency=true
 
@@ -11,13 +11,10 @@ DefaultProfile=XeroLinux.profile
 [Dialogs]
 FirstRun=false
 
-[FileDialogSize]
-DP-2 HDMI-0 HDMI-1 Height 2560x1440=781
-DP-2 HDMI-0 HDMI-1 Width 2560x1440=1298
-
 [KFileDialog Settings]
 detailViewIconSize=16
 
 [Window]
-Height=40
+Height=45
+ShowTabBar=false
 Width=60

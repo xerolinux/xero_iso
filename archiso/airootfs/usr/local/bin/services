@@ -17,6 +17,7 @@ systemctl start --now bluetooth.service
 echo "#################################"
 echo "Enable Network Service"
 echo "#################################"
+systemctl enable NetworkManager.service
 systemctl start NetworkManager.service
 
 echo "Bluetooth improvements"
