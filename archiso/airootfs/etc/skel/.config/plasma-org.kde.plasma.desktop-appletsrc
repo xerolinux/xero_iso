@@ -28,7 +28,7 @@ DialogWidth=960
 
 [Containments][2][Applets][21][Configuration][General]
 alphaSort=true
-customButtonImage=start-here
+customButtonImage=applications-all
 favoriteSystemActions=logout,reboot
 favoritesPortedToKAstats=true
 showIconsRootLevel=true
@@ -152,6 +152,7 @@ AppletOrder=21;25;6;35;39;38;40;36;30;7
 ItemGeometries-1024x768=
 ItemGeometries-1920x1080=
 ItemGeometries-2560x1440=
+ItemGeometries-800x600=
 ItemGeometriesHorizontal=
 activityId=ff5dacbd-8c1c-4284-a79e-6370e9851124
 formfactor=0
@@ -171,11 +172,7 @@ ToolBoxButtonX=846
 ToolBoxButtonY=36
 
 [Containments][22][Wallpaper][org.kde.image][General]
-Image=file:///home/liveuser/.local/share/wallpapers/XeroLinux.jpg
-SlidePaths=$HOME/.local/share/wallpapers,/usr/share/wallpapers
-
-[Containments][22][Wallpaper][org.kde.image][General]
-Image=/usr/share/defaultbg/XeroLinux.jpg
+Image=file:///usr/share/defaultbg/XeroLinux.jpg
 SlidePaths=/usr/share/defaultbg,$HOME/.local/share/wallpapers/
 
 [Containments][27]

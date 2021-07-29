@@ -5,7 +5,6 @@
 ###archiso
 alsa-utils
 amd-ucode
-#archinstall
 arch-install-scripts
 b43-fwcutter
 base
@@ -48,13 +47,11 @@ iwd
 jfsutils
 kitty-terminfo
 less
-#lftp
 libfido2
 libusb-compat
 linux
 linux-atm
 linux-firmware
-#livecd-sounds
 lsscsi
 lvm2
 lynx
@@ -125,12 +122,11 @@ grub
 haveged
 logrotate
 ntp
-rust
 wget
 
 # everything above comes from archiso releng folder
 #######################################################
-###                    ALCI                         ###
+###                    XERO                         ###
 #######################################################
 
 ###video
@@ -140,7 +136,7 @@ xf86-video-vesa
 xf86-video-vmware
 
 xero-calamares
-xl-calamares-config
+xerolinux-calamares-config
 xterm
 
 #######################################################
@@ -180,7 +176,6 @@ kio
 kcoreaddons
 kiconthemes
 kpmcore
-mkinitcpio-openswap
 polkit-qt5
 qt5-svg
 qt5-tools
@@ -200,9 +195,7 @@ network-manager-applet
 #########################################################################
 
 ###applications
-feh
 gmrun
-imagemagick
 numlockx
 
 ###conky
@@ -220,17 +213,14 @@ ttf-hack
 ttf-roboto
 
 ###Theming
-arc-icon-theme
 beautyline
 kvantum-qt5
 latte-dock
 
 ###utilities
-appimagelauncher
 arandr
 asciinema
 assimp
-baobab
 boost
 cblas
 cifs-utils
@@ -241,7 +231,6 @@ dmidecode
 edid-decode-git
 exfat-utils
 expac
-extra-cmake-modules
 file-roller
 fuse2
 fuse3
@@ -249,7 +238,6 @@ fuseiso
 galculator
 git
 gksu
-#glances
 gnome-disk-utility
 graphviz
 grsync
@@ -308,7 +296,7 @@ yakuake
 zenity
 zip
 
-## Thunar AiO
+## Thunar AiO (Required For Root)
 
 thunar
 thunar-archive-plugin
@@ -318,29 +306,31 @@ thunar-volman
 
 ## G-Streamer
 
-#gstreamer
-#gst-libav
-#gst-plugins-base
-#gst-plugins-bad
-#gst-plugins-ugly
+gstreamer
+gst-libav
+gst-plugins-base
+gst-plugins-bad
+gst-plugins-ugly
 #gst-plugin-pipewire
 
 ## Pulse Audio
 
-#pulseaudio
-#pulseaudio-alsa
-#pulseaudio-bluetooth
-#pulseaudio-qt
-#pulsemixer
-#pavucontrol
-#python-pulsectl
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-qt
+pulsemixer
+pavucontrol
+python-pulsectl
 
 ## Pipewire Audio
 
 #pipewire
 #pipewire-alsa
 #pipewire-jack
+#pipewire-media-session
 #pipewire-pulse
+#pipewire-zeroconf
 
 ###bluetooth
 
@@ -373,6 +363,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+ldmtool
 mtpfs
 udiskie
 udisks2
@@ -409,18 +400,12 @@ python-websockets
 
 ###applications
 
-brave
+brave-bin
 
 ###cursors
 
 bibata-cursor-theme-bin
 breeze
-
-###fonts
-
-font-manager-git
-ttf-font-awesome
-ttf-ms-fonts
 
 ###tools
 
@@ -489,9 +474,7 @@ linux-headers
 kwin
 milou
 breeze
-oxygen
 drkonqi
-kwrited
 kgamma5
 kscreen
 khotkeys
@@ -499,16 +482,13 @@ sddm-kcm
 kmenuedit
 ksysguard
 bluedevil
-breeze-gtk
 powerdevil
 libkscreen
-kwallet-pam
 kinfocenter
 ksshaskpass
 kdecoration
 libksysguard
 kscreenlocker
-kde-cli-tools
 xdg-user-dirs
 systemsettings
 kwayland-server
@@ -516,7 +496,6 @@ kde-gtk-config
 packagekit-qt5
 qt5-websockets
 polkit-kde-agent
-kdeplasma-addons
 kactivitymanagerd
 kwayland-integration
 xdg-desktop-portal-kde
@@ -525,8 +504,6 @@ xdg-desktop-portal-kde
 
 plasma-nm
 plasma-pa
-plasma-sdk
-plasma-disks
 plasma-vault
 plasma-desktop
 plasma-framework
@@ -540,22 +517,12 @@ plasma-workspace-wallpapers
 ### Others
 
 go
-packagekit-qt5
 pacman-contrib
 systemd-kcm
 ocs-url
-cryfs
-encfs
-gocryptfs
 
 ### KDE Applications group content Categorized
 ### https://archlinux.org/groups/x86_64/kde-applications/
-
-## System
-
-kcron
-dolphin
-ksystemlog
 
 ## Utilities
 
@@ -563,20 +530,17 @@ ark
 kate
 kgpg
 kfind
+dolphin
 kdialog
 konsole
-sweeper
-itinerary
-kio-extras
+kmousetool
 ksystemlog
-kcharselect
 khelpcenter
 markdownpart
 kwalletmanager
 
 ## Networking
 
-kget
 kdeconnect
 zeroconf-ioslave
 kdenetwork-filesharing
@@ -584,19 +548,14 @@ signon-kwallet-extension
 
 ## Graphics
 
-okular
 svgpart
 gwenview
 spectacle
 kcolorchooser
-kdegraphics-mobipocket
 kdegraphics-thumbnailers
 
 ## Multimedia
 
-elisa
-kwave
-audiocd-kio
 ffmpegthumbs
 
 ## KDE-SDK
@@ -605,15 +564,8 @@ lokalize
 dolphin-plugins
 kdesdk-thumbnailers
 
-## Accessibility
-
-kontrast
-kmousetool
-
 ## Complements
 
-krfb
-kruler
 xsettingsd
 systemdgenie
 gnome-keyring

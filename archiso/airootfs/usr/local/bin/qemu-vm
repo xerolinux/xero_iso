@@ -8,7 +8,7 @@ set -e
 # Based on tutorial by @EFlinux https://www.youtube.com/watch?v=itZf5FpDcV0
 
 echo "Downloading KVM and Dpendencies..."
-sudo pacman -S --noconfirm --needed qemu virt-manager virt-viewer libvirt iptables-nft dnsmasq dmidecode edk2-ovmf
+sudo pacman -S --needed qemu virt-manager virt-viewer libvirt dnsmasq dmidecode edk2-ovmf
 echo
 echo "Starting LibVirt-d Service..."
 sudo systemctl enable libvirtd.service
@@ -33,7 +33,7 @@ echo
 echo "Setting up Networking services..."
 sudo virsh net-define /etc/libvirt/qemu/networks/default.xml
 sudo virsh net-start default
-sudo virsh net-autostart
+sudo virsh net-autostart default
 echo
 echo "############################################################################################################"
 echo "#####################              REBOOT FOR CHANGES TO TAKE EFFECT                   #####################"

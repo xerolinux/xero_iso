@@ -104,6 +104,9 @@ alias kc='killall conky'
 #mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Public /home/$USER/Public"
 
+#enable vmware networks
+alias vmnet='sudo systemctl enable vmware-networks && sudo systemctl start --now vmware-networks'
+
 #Bash aliases
 alias mkfile='touch'
 alias thor='sudo thunar'

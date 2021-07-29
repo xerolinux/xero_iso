@@ -20,6 +20,18 @@ echo "#################################"
 systemctl enable NetworkManager.service
 systemctl start NetworkManager.service
 
+echo "#################################"
+echo "Enable FSTrim Service"
+echo "#################################"
+systemctl enable fstrim.service
+systemctl start fstrim.service
+
+echo "#################################"
+echo "Enable FSTrim timer Service"
+echo "#################################"
+systemctl enable fstrim.timer
+systemctl start fstrim.timer
+
 echo "Bluetooth improvements"
 echo "#################################"
 sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf

@@ -28,21 +28,23 @@ plugin=org.kde.latte.plasmoid
 
 [Containments][1][Applets][2][Configuration][General]
 isInLatteDock=true
-launchers59=applications:org.kde.dolphin.desktop,applications:brave-browser.desktop,applications:vlc.desktop,applications:kvantummanager.desktop,applications:galculator.desktop,applications:org.kde.konsole.desktop,applications:org.gnome.DiskUtility.desktop,applications:org.bleachbit.BleachBit.desktop,applications:timeshift-gtk.desktop,applications:systemsettings.desktop
+launchers59=applications:org.kde.dolphin.desktop,applications:brave-browser.desktop,applications:kvantummanager.desktop,applications:galculator.desktop,applications:org.kde.konsole.desktop,applications:org.gnome.DiskUtility.desktop,applications:org.bleachbit.BleachBit.desktop,applications:timeshift-gtk.desktop,applications:systemsettings.desktop
 
 [Containments][1][ConfigDialog]
-DialogHeight=1267
-DialogWidth=690
+DialogHeight=914
+DialogWidth=570
 
 [Containments][1][General]
 advanced=false
 appletOrder=2
+backgroundOnlyOnMaximized=true
 disablePanelShadowForMaximized=true
 durationTime=x1
-hoverAction=HighlightWindows
+hoverAction=PreviewAndHighlightWindows
 iconSize=36
 panelSize=10
 panelTransparency=25
+plasmaBackgroundForPopups=true
 scrollAction=ScrollActivities
 shadowOpacity=60
 shadowSize=45
@@ -57,6 +59,9 @@ enabled=true
 enabledForApplets=true
 padding=0.07999999821186066
 type=org.kde.latte.default
+
+[Containments][1][Indicator][org.kde.latte.default][General]
+activeStyle=Dot
 
 [LayoutSettings]
 background=

@@ -5,6 +5,7 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 GLCore=true
 GLTextureFilter=1
 OpenGLIsUnsafe=false
+WindowsBlockCompositing=false
 
 [Desktops]
 Id_1=1424b8e4-0f63-4654-961f-8c4011636321
@@ -22,7 +23,11 @@ ComboboxPopups=98
 Inactive=98
 
 [Plugins]
-cubeslideEnabled=true
+blurEnabled=true
+flipswitchEnabled=true
+kwin4_effect_fadedesktopEnabled=true
+kwin4_effect_translucencyEnabled=false
+presentwindowsEnabled=false
 slideEnabled=false
 slidebackEnabled=true
 wobblywindowsEnabled=true
@@ -30,7 +35,11 @@ wobblywindowsEnabled=true
 [TabBox]
 DesktopLayout=org.kde.breeze.desktop
 DesktopListLayout=org.kde.breeze.desktop
-LayoutName=org.kde.breeze.desktop
+LayoutName=preview_reel
+
+[Windows]
+FocusStealingPreventionLevel=0
+Placement=Centered
 
 [org.kde.kdecoration2]
 BorderSize=Tiny
