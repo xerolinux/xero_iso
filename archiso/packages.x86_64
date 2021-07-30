@@ -136,7 +136,7 @@ xf86-video-vesa
 xf86-video-vmware
 
 xero-calamares
-xerolinux-calamares-config
+calamares-config
 xterm
 
 #######################################################
@@ -228,6 +228,7 @@ cmake
 cronie
 dconf-editor
 dmidecode
+duf
 edid-decode-git
 exfat-utils
 expac
