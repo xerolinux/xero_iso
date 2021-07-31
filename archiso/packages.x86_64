@@ -197,6 +197,7 @@ network-manager-applet
 ###applications
 gmrun
 numlockx
+pamac-all
 
 ###conky
 jq
@@ -247,7 +248,6 @@ gtk-doc
 gts
 hardinfo
 hddtemp
-htop
 hw-probe
 intltool
 iw
@@ -396,12 +396,13 @@ python-pygments
 python-websockets
 
 ###########################################################################
-#                           ARCOLINUX_REPOS
+#                           XEROLINUX_REPOS
 ###########################################################################
 
 ###applications
 
-brave-bin
+vivaldi
+vivaldi-ffmpeg-codecs
 
 ###cursors
 
