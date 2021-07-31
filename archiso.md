@@ -9,7 +9,7 @@ https://www.archlinux.org/packages/extra/any/archiso/
 We are now using this version
 
 
-archiso-version=archiso 57-1
+archiso-version=archiso 57-2
 
 
 sudo pacman -Q archiso and you will know your version
