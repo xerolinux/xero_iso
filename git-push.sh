@@ -1,9 +1,9 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
+# Written to be used on 64 bits computers
+# Author 	: 	DarkXero
+# Website 	: 	http://xerolinux.github.io
 ##################################################################################################################
 # change a commit comment
 # git commit --amend -m "more info"
