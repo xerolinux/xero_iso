@@ -1,9 +1,5 @@
-[FileDialogSize]
-DP-2 HDMI-0 HDMI-1 Height 2560x1440=751
-DP-2 HDMI-0 HDMI-1 Width 2560x1440=1122
-
 [KFileDialog Settings]
-Recent Files[$e]=XeroLinux.jpg,file:///usr/share/defaultbg/XeroLinux.jpg
+Recent Files[$e]=XeroLinux.png,file:///usr/share/defaultbg/XeroLinux.png
 Recent URLs[$e]=file:///usr/share/defaultbg/
 detailViewIconSize=16
 
@@ -11,12 +7,6 @@ detailViewIconSize=16
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAAAAA5oAAAKTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Virtual-1 Height 1024x768=659
-Virtual-1 Width 1024x768=922
-Virtual-1 XPosition 1024x768=0
-Virtual-1 XPosition 1920x1080=1
-Virtual-1 YPosition 1024x768=0
-Virtual-1 YPosition 1920x1080=64
 
 [Notification Messages]
 welcome=false

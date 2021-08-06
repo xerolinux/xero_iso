@@ -3,19 +3,23 @@
 echo "#################################"
 echo "Fixing Pacman Databases"
 echo "#################################"
-sleep 3
+sleep 2
 echo "Deleting Existing Keys"
 echo "#################################"
 sudo rm /var/lib/pacman/sync/*
-sleep 3
+sleep 2
 echo "Deleting gnupg files"
 echo "#################################"
 sudo rm -r /etc/pacman.d/gnupg/*
-sleep 3
+sleep 2
 echo "Populating Keys anew"
 echo "#################################"
 sudo pacman-key --init && sudo pacman-key --populate
-sleep 3
+sleep 2
+echo "Restarting Pacman-Init Service"
 echo "#################################"
-echo "Done ! Please Try again & Report"
+sudo systemctl restart pacman-init.service
+sleep 2
+echo "#################################"
+echo "Done ! Try Update now & Report"
 echo "#################################"
