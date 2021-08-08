@@ -37,4 +37,5 @@ file_permissions=(
   ["/usr/local/bin/grubfix"]="0:0:755"
   ["/usr/local/bin/subfix"]="0:0:755"
   ["/usr/local/bin/starwars"]="0:0:755"
+  ["/usr/local/bin/whichvga"]="0:0:755"
   )
