@@ -149,10 +149,6 @@ PreloadWeight=42
 AppletOrder=21;25;6;35;39;38;40;36;30;7
 
 [Containments][22]
-ItemGeometries-1024x768=
-ItemGeometries-1920x1080=
-ItemGeometries-2560x1440=
-ItemGeometries-800x600=
 ItemGeometriesHorizontal=
 activityId=ff5dacbd-8c1c-4284-a79e-6370e9851124
 formfactor=0
@@ -176,7 +172,6 @@ Image=file:///usr/share/defaultbg/XeroLinux.png
 SlidePaths=/usr/share/defaultbg,$HOME/.local/share/wallpapers/
 
 [Containments][27]
-ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=ff5dacbd-8c1c-4284-a79e-6370e9851124
 formfactor=0
@@ -187,7 +182,6 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][28]
-ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=ff5dacbd-8c1c-4284-a79e-6370e9851124
 formfactor=0
@@ -198,7 +192,6 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][29]
-ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=ff5dacbd-8c1c-4284-a79e-6370e9851124
 formfactor=0
