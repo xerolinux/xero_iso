@@ -24,12 +24,17 @@ Inactive=98
 
 [Plugins]
 blurEnabled=true
+desktopchangeosdEnabled=false
 flipswitchEnabled=true
+forceblurEnabled=true
 kwin4_effect_fadedesktopEnabled=true
 kwin4_effect_translucencyEnabled=false
+minimizeallEnabled=false
 presentwindowsEnabled=false
 slideEnabled=false
 slidebackEnabled=true
+synchronizeskipswitcherEnabled=false
+videowallEnabled=false
 wobblywindowsEnabled=true
 
 [TabBox]
