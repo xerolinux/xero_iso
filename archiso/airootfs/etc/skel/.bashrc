@@ -24,8 +24,11 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-#iso and version used to install ArcoLinux
+#iso and version used to install XeroLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
+
+## Delete Symlinks for Repos
+alias delsl='find . -xtype l -delete'
 
 #switch between lightdm and sddm
 alias nldm="sudo nano /etc/lightdm/lightdm.conf"
@@ -195,12 +198,13 @@ alias jctl="journalctl -p 3 -xb"
 #shutdown or reboot
 alias sr="sudo reboot"
 alias ssn="sudo shutdown now"
+alias lgn='qdbus org.kde.ksmserver /KSMServer logout 0 3 3'
 
 #Load changes to ./bashrc
 alias nbash='source ~/.bashrc'
 
 #Fix KVM Resolition
-alias vset='xrandr -s 1920x1080'
+alias vset='kcmshell5 kcm_kscreen'
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
@@ -229,4 +233,4 @@ ex ()
   fi
 }
 
-clear && neofetch | lolcat
+clear && neofetch

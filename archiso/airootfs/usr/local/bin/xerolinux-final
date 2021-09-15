@@ -27,7 +27,8 @@ echo "Cleanup original files"
 echo "#################################"
 rm -f /etc/sudoers.d/g_wheel
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
-rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
+rm -f /etc/systemd/system/etc-pacman.d-gnupg.mount
+rm -f /etc/systemd/system/pacman-init.service
 rm /root/{.automated_script.sh,.zlogin}
 mv /etc/xerolinux-release /etc/lsb-release
 

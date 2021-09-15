@@ -9,51 +9,39 @@ echo "#################################"
 chmod -v 750 /root
 
 echo "#################################"
-echo "Enable Bluetooth Service"
-echo "#################################"
-systemctl enable bluetooth.service
-systemctl start --now bluetooth.service
-
-echo "#################################"
 echo "Enable Network Service"
 echo "#################################"
-systemctl enable NetworkManager.service
-systemctl start NetworkManager.service
+systemctl enable --now NetworkManager
 
 echo "#################################"
-echo "Enable FSTrim Service"
+echo "Enable Open-VM Tools Service"
 echo "#################################"
-systemctl enable fstrim.service
-systemctl start fstrim.service
+systemctl enable --now vmtoolsd
+
+echo "#################################"
+echo "Enable VM-Block Service"
+echo "#################################"
+systemctl enable --now vmware-vmblock-fuse
+
+echo "#################################"
+echo "Enable QEMU Service"
+echo "#################################"
+systemctl enable --now qemu-guest-agent
+
+echo "#################################"
+echo "Enable Bluetooth Service"
+echo "#################################"
+systemctl enable bluetooth
 
 echo "#################################"
 echo "Enable FSTrim timer Service"
 echo "#################################"
 systemctl enable fstrim.timer
-systemctl start fstrim.timer
 
 echo "Bluetooth improvements"
 echo "#################################"
 sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf
 echo 'load-module module-switch-on-connect' | sudo tee --append /etc/pulse/default.pa
-
-echo "#################################"
-echo "Enable Open-VM Tools Service"
-echo "#################################"
-systemctl enable vmtoolsd.service
-systemctl start --now vmtoolsd.service
-
-echo "#################################"
-echo "Enable VM-Block Service"
-echo "#################################"
-systemctl enable vmware-vmblock-fuse.service
-systemctl start --now vmware-vmblock-fuse.service
-
-echo "#################################"
-echo "Enable QEMU Service"
-echo "#################################"
-systemctl enable qemu-guest-agent.service
-systemctl start --now qemu-guest-agent.service
 
 echo "#################################"
 echo "End xerolinux-final"

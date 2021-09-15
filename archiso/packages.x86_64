@@ -45,6 +45,7 @@ irssi
 iw
 iwd
 jfsutils
+kinit
 kitty-terminfo
 less
 libfido2
@@ -137,7 +138,7 @@ xf86-video-vmware
 
 xero-calamares
 calamares-config
-xterm
+xerolinux-config
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
@@ -196,6 +197,7 @@ network-manager-applet
 
 ###applications
 gmrun
+grub-customizer
 numlockx
 pamac-all
 
@@ -206,6 +208,7 @@ lm_sensors
 ###fonts
 adobe-source-sans-pro-fonts
 awesome-terminal-fonts
+nerd-fonts-fira-code
 noto-fonts-emoji
 otf-libertinus
 tex-gyre-fonts
@@ -213,12 +216,20 @@ ttf-droid
 ttf-hack
 ttf-roboto
 
-###Theming
-beautyline
+###Theme Tools
 kvantum-qt5
 latte-dock
 
+### Rice Related
+kvantum-theme-layan-git
+layan-cursor-theme-git
+layan-gtk-theme-git
+layan-kde-git
+tela-circle-icon-theme-git
+
+
 ###utilities
+appmenu-gtk-module
 arandr
 asciinema
 assimp
@@ -229,6 +240,7 @@ cmake
 cronie
 dconf-editor
 dmidecode
+dnsmasq
 duf
 edid-decode-git
 exfat-utils
@@ -281,7 +293,6 @@ qt5-3d
 rhash
 s3fs-fuse
 semver
-snapper
 sshfs
 unace
 unrar
@@ -313,17 +324,16 @@ gst-libav
 gst-plugins-base
 gst-plugins-bad
 gst-plugins-ugly
-#gst-plugin-pipewire
 
 ## Pulse Audio
 
-pulseaudio
-pulseaudio-alsa
-pulseaudio-bluetooth
-pulseaudio-qt
-pulsemixer
-pavucontrol
-python-pulsectl
+#pulseaudio
+#pulseaudio-alsa
+#pulseaudio-bluetooth
+#pulseaudio-qt
+#pulsemixer
+#pavucontrol
+#python-pulsectl
 
 ## Pipewire Audio
 
@@ -336,10 +346,10 @@ python-pulsectl
 
 ###bluetooth
 
-blueberry
-bluez
-bluez-libs
-bluez-utils
+#blueberry
+#bluez
+#bluez-libs
+#bluez-utils
 
 ###network
 
@@ -435,7 +445,6 @@ python-pyparted
 synapse
 sysprof
 systemd-manager
-timeshift
 yad
 
 #######################################################
@@ -453,7 +462,7 @@ neofetch
 
 open-vm-tools
 qemu-guest-agent
-virtualbox-guest-utils-nox
+virtualbox-guest-utils
 
 ##### sddm display manager
 
@@ -506,7 +515,6 @@ xdg-desktop-portal-kde
 ### Plasma Stuff
 
 plasma-nm
-plasma-pa
 plasma-vault
 plasma-desktop
 plasma-framework
@@ -555,6 +563,7 @@ svgpart
 gwenview
 spectacle
 kcolorchooser
+kdeplasma-addons
 kdegraphics-thumbnailers
 
 ## Multimedia
