@@ -29,4 +29,4 @@ fi
 echo "#################################"
 echo "End displaymanager-check"
 echo "#################################"
-rm /usr/local/bin/displaymanager-check
+rm /usr/local/bin/dmcheck
