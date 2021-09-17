@@ -270,7 +270,7 @@ alias retro='sudo mount -t cifs -o username=techxero,password=m7pi56qe,uid=1000,
 alias xupdate='xudir && ./update-to-release.sh'
 alias xudir='cd /mnt/Linux/GOG/Xonotic/misc/tools/rsync-updater/'
 
-clear && neofetch
+clear && neofetch | lolcat
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
