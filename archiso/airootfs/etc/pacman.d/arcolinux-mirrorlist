@@ -1,0 +1,6 @@
+#######################################################
+# Europe Belgium Brussels
+Server = https://ftp.belnet.be/arcolinux/$repo/$arch
+
+# United States San Francisco
+Server = https://arcolinux.github.io/$repo/$arch
