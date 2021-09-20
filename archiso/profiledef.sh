@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="xerolinux"
+iso_name="xerolinux-main"
 iso_label="XEROLINUX_$(date +%Y%m)"
 iso_publisher="XeroLinux <https://xerolinux.online>"
 iso_application="XeroLinux Live/Rescue CD"
