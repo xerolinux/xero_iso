@@ -247,7 +247,7 @@ echo
 # 	echo
  	echo "Moving pkglist.x86_64.txt"
  	echo "########################"
-	rename=$(date +%Y-%m-%d)
+	rename=$(date +%Y-%m)
  	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-$rename-pkglist.txt
 
 
