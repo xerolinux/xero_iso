@@ -233,4 +233,4 @@ ex ()
   fi
 }
 
-clear && neofetch
+clear && neofetch | lolcat
