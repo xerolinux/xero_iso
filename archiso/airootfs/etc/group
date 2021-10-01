@@ -14,4 +14,3 @@ users:x:985:liveuser
 nopasswdlogin:x:966:liveuser
 autologin:x:967:liveuser
 liveuser:x:1000:
-libvirt:x:954:liveuser
