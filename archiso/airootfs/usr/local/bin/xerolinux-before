@@ -6,8 +6,7 @@ echo "#################################"
 echo "Populate Core Team keys"
 echo "#################################"
 pacman-key --init
-pacman-key --populate archlinux
-pacman-key --populate arcolinux
+pacman-key --populate
 
 echo "Copy grub themes (archiso deletes /boot when making the ISO)"
 echo "#################################"
