@@ -20,6 +20,7 @@ file_permissions=(
   ["/etc/sudoers.d"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/usr/local/bin/vcheck"]="0:0:755"
+  ["/usr/local/bin/reset"]="0:0:755"
   ["/usr/local/bin/vbox-share"]="0:0:755"
   ["/usr/local/bin/dmcheck"]="0:0:755"
   ["/usr/local/bin/xerolinux-before"]="0:0:755"

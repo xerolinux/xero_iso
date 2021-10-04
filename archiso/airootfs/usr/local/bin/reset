@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#set -e
+echo "##########################################"
+echo "Be Careful this will override your Rice! !"
+echo "##########################################"
+sleep 5
+echo "Creating Backups of ~/.config folder"
+echo "#####################################"
+cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
+sleep 2
+echo "#################################"
+echo "Moving content from skel"
+echo "#################################"
+sleep 2
+for i in `ls /home/`; do su -s "/bin/bash" -c "cp -aT /etc/skel/ /home/$i/" $i || exit 0; done
+sleep 2
+echo "#################################"
+echo "Done! Rebooting to Apply Settings"
+echo "#################################"
+sleep 2
+sudo reboot
