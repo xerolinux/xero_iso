@@ -141,7 +141,7 @@ xf86-video-vmware
 
 xero-calamares
 calamares-config
-xerolinux-config
+xero-config-nord
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
@@ -224,11 +224,13 @@ kvantum-qt5
 latte-dock
 
 ### Rice Related
-layan-cursor-theme-git
-layan-gtk-theme-git
-layan-kde-git
-tela-circle-icon-theme-git
-
+kvantum-theme-nordic-git
+nordic-darker-standard-buttons-theme
+nordic-darker-theme
+nordic-kde-git
+nordic-theme
+sddm-nordic-theme-git
+zafiro-icon-theme
 
 ###utilities
 appmenu-gtk-module
