@@ -96,9 +96,7 @@ alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias fc="sudo fc-cache -fv"
 
 #get fastest mirrors in your neighborhood
-alias rsimp='arcolinux-reflector-simple'
-alias mirrorr="rate-arch-mirrors | sudo tee /etc/pacman.d/mirrorlist"
-alias rfgrfr='reflector --country France --country Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+alias ram="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
 alias reft='sudo systemctl enable reflector.service reflector.timer && sudo systemctl start reflector.service reflector.timer'
 
 #quickly kill stuff
@@ -117,9 +115,8 @@ alias jctl='journalctl -p 3 -xb'
 alias ssaver='xscreensaver-demo'
 alias ~='cd ~ && source ~/.bashrc'
 alias pingme='ping -c64 techxero.com'
-alias cls='clear && neofetch | lolcat'
+alias cls='clear && neofetch'
 alias traceme='traceroute techxero.com'
-alias nxplayer='cd /usr/NX/bin/ && ./nxplayer & cls'
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #hardware info --short
@@ -167,7 +164,6 @@ alias baloorc='sudo nano ~/.config/baloofilerc'
 alias nhefflogout='sudo nano /etc/oblogout.conf'
 alias nmkinitcpio='sudo nano /etc/mkinitcpio.conf'
 alias nmirrorlist='sudo nano /etc/pacman.d/mirrorlist'
-alias tgram='sudo nano ~/.local/share/applications/userapp-Telegram*'
 
 #cd/ aliases
 alias home='cd ~'
@@ -190,7 +186,6 @@ alias gpgfx='gpg2 --keyserver-options auto-key-retrieve --verify'
 #receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
-alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
@@ -201,7 +196,7 @@ alias ssn="sudo shutdown now"
 alias lgn='qdbus org.kde.ksmserver /KSMServer logout 0 3 3'
 
 #Load changes to ./bashrc
-alias nbash='source ~/.bashrc'
+alias reload='source ~/.bashrc && neofetch'
 
 #Fix KVM Resolition
 alias vset='kcmshell5 kcm_kscreen'
