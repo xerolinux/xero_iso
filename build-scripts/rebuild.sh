@@ -1,19 +1,8 @@
 #!/bin/bash
 #set -e
 ##################################################################################################################
-# Author	:	Erik Dubois
-# Website	:	https://www.erikdubois.online
-# Website	:	https://www.arcolinux.info
-# Website	:	https://www.arcolinux.com
-# Website	:	https://www.arcolinuxd.com
-# Website	:	https://www.arcolinuxb.com
-# Website	:	https://www.arcolinuxiso.com
-# Website	:	https://www.arcolinuxforum.com
-# Website	:	https://www.alci.online
-##################################################################################################################
-#
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
-#
+# Author	:	DarkXero
+# Website	:	https://xldb.techxero.com
 ##################################################################################################################
 echo
 echo "################################################################## "
@@ -35,7 +24,7 @@ echo
 	#isoLabel='arcolinux-next-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 58-1"
+	archisoRequiredVersion="archiso 58-2"
 	buildFolder=$HOME"/xerolinux-build"
 	outFolder=$HOME"/xerolinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
