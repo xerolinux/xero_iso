@@ -24,19 +24,11 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
-#iso and version used to install XeroLinux
+##Cmatrix thing
+alias matrix='cmatrix -s -C cyan'
+
+#iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
-
-## Delete Symlinks for Repos
-alias delsl='find . -xtype l -delete'
-
-#switch between lightdm and sddm
-alias nldm="sudo nano /etc/lightdm/lightdm.conf"
-alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
-alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
-
-## Modify Grub-BTRFS
-alias ngbt='sudo nano /etc/default/grub-btrfs/config'
 
 #ignore upper and lowercase when TAB completion
 bind "set completion-ignore-case on"
@@ -44,7 +36,7 @@ bind "set completion-ignore-case on"
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
 
-#list with exa
+# Replace ls with exa
 alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
 alias la='exa -a --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first --icons'  # long format
@@ -73,12 +65,8 @@ alias install='sudo pacman -S'
 alias linstall='sudo pacman -U '
 alias update='sudo pacman -Syyu'
 alias clrcache='sudo pacman -Scc'
-alias upall='paru && sudo pacman -Syyu'
-alias psr="sudo pacman -Ss --color auto"
-alias unlock='sudo rm /var/lib/pacman/db.lck'
+alias updb='paru && sudo pacman -Sy'
 alias orphans='sudo pacman -Rns $(pacman -Qtdq)'
-alias clc='sudo pacman -Scc --color auto'
-
 
 #Paru as aur helper - updates everything
 alias pget='paru -S '
@@ -89,14 +77,14 @@ alias upall='paru -Syyu --noconfirm'
 #Flatpak Update
 alias fpup='flatpak update'
 
+#Snap Update
+alias sup='sudo snap refresh'
+
 #grub update
 alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-#add new fonts
-alias fc="sudo fc-cache -fv"
-
 #get fastest mirrors in your neighborhood
-alias ram="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist"
+alias ram='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
 alias reft='sudo systemctl enable reflector.service reflector.timer && sudo systemctl start reflector.service reflector.timer'
 
 #quickly kill stuff
@@ -105,19 +93,15 @@ alias kc='killall conky'
 #mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Public /home/$USER/Public"
 
-#enable vmware networks
-alias vmnet='sudo systemctl enable vmware-networks && sudo systemctl start --now vmware-networks'
-
 #Bash aliases
 alias mkfile='touch'
 alias thor='sudo thunar'
 alias jctl='journalctl -p 3 -xb'
 alias ssaver='xscreensaver-demo'
-alias ~='cd ~ && source ~/.bashrc'
-alias pingme='ping -c64 techxero.com'
+alias reload='cd ~ && source ~/.bashrc'
+alias pingme='ping -c64 github.com'
 alias cls='clear && neofetch'
-alias traceme='traceroute techxero.com'
-alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
+alias traceme='traceroute github.com'
 
 #hardware info --short
 alias hw="hwinfo --short"
@@ -138,6 +122,9 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 #GiT  command
 alias gc='git clone '
 
+#userlist
+alias userlist="cut -d: -f1 /etc/passwd"
+
 #Copy/Remove files/dirs
 alias rmd='rm -r'
 alias srm='sudo rm'
@@ -146,13 +133,6 @@ alias cpd='cp -R'
 alias scp='sudo cp'
 alias scpd='sudo cp -R'
 
-#Recent Installed Packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -100"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
-
-#Cleanup orphaned packages
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-
 #nano
 alias bashrc='sudo nano ~/.bashrc'
 alias nsddm='sudo nano /etc/sddm.conf'
@@ -160,9 +140,6 @@ alias pconf='sudo nano /etc/pacman.conf'
 alias mkpkg='sudo nano /etc/makepkg.conf'
 alias ngrub='sudo nano /etc/default/grub'
 alias smbconf='sudo nano /etc/samba/smb.conf'
-alias baloorc='sudo nano ~/.config/baloofilerc'
-alias nhefflogout='sudo nano /etc/oblogout.conf'
-alias nmkinitcpio='sudo nano /etc/mkinitcpio.conf'
 alias nmirrorlist='sudo nano /etc/pacman.d/mirrorlist'
 
 #cd/ aliases
@@ -175,31 +152,20 @@ alias desk='cd ~/Desktop'
 alias pics='cd ~/Pictures'
 alias dldz='cd ~/Downloads'
 alias docs='cd ~/Documents'
-alias linux='cd /mnt/Linux'
 alias sapps='cd /usr/share/applications'
 alias lapps='cd ~/.local/share/applications'
 
-#verify signature for isos
-alias gpgchk='gpg2 --keyserver-options auto-key-retrieve --verify'
-alias gpgfx='gpg2 --keyserver-options auto-key-retrieve --verify'
+#switch between lightdm and sddm
+alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
+alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
 
-#receive the key of a developer
-alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
-alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
-
-#get the error messages from journalctl
-alias jctl="journalctl -p 3 -xb"
+#Recent Installed Packages
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
 #shutdown or reboot
 alias sr="sudo reboot"
 alias ssn="sudo shutdown now"
-alias lgn='qdbus org.kde.ksmserver /KSMServer logout 0 3 3'
-
-#Load changes to ./bashrc
-alias reload='source ~/.bashrc && neofetch'
-
-#Fix KVM Resolition
-alias vset='kcmshell5 kcm_kscreen'
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
