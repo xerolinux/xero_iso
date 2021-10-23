@@ -29,5 +29,6 @@ file_permissions=(
   ["/usr/local/bin/xerolinux-final"]="0:0:755"
   ["/usr/local/bin/services"]="0:0:755"
   ["/usr/local/bin/remove-nvidia"]="0:0:755"
+  ["/usr/local/bin/welcome"]="0:0:755"
   ["/usr/local/bin/grubfix"]="0:0:755"
   )

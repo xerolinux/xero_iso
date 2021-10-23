@@ -28,7 +28,7 @@ echo "#################################"
 rm -f /etc/sudoers.d/g_wheel
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -f /etc/systemd/system/etc-pacman.d-gnupg.mount
-rm -f /etc/systemd/system/pacman-init.service
+rm -f /etc/xdg/autostart/welcome.desktop
 rm /root/{.automated_script.sh,.zlogin}
 mv /etc/xerolinux-release /etc/lsb-release
 
@@ -39,5 +39,6 @@ chmod -v 750 /root
 echo "#################################"
 echo "End xerolinux-final"
 echo "#################################"
+rm /usr/local/bin/welcome
 rm /usr/local/bin/all-cores
 rm /usr/local/bin/xerolinux-final

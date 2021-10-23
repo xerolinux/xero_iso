@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Qt;System;
+Comment=Configure Live Environment
+Exec=/usr/local/bin/welcome
+GenericName=Welcome
+Icon=system-settings
+Name=XeroLinux Welcome
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
