@@ -3,7 +3,7 @@ yad --title "XeroLinux Welcome" --form --columns=2 --width=480 --height=240 --te
 --field="<b>Start XeroLinux Installer</b>":fbtn "sh -c 'sudo -E /usr/bin/calamares'" \
 --field="<b>Update Arch Mirrors</b>":fbtn "konsole -e sh -c 'rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'" \
 --field="<b>Change Display Resolution</b>":fbtn 'kcmshell5 kcm_kscreen' \
---field="<b>Start Installer Debug mode</b>":fbtn " sh -c 'sudo -E /usr/bin/calamares -d'" \
+--field="<b>Start Installer Debug mode</b>":fbtn "konsole -e 'sudo -E /usr/bin/calamares -d'" \
 --field="<b>Launch Partition Manager</b>":fbtn "sh -c '/usr/bin/gnome-disks'" \
 --field="<b>Check For System Updates</b>":fbtn "konsole -e 'paru -Syyu --noconfirm'" \
 --button=Exit:1
