@@ -9,10 +9,10 @@ echo "#####################################"
 cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
 sleep 2
 echo "#################################"
-echo "Moving content from skel"
+echo "Restoring default settings"
 echo "#################################"
 sleep 2
-for i in `ls /home/`; do su -s "/bin/bash" -c "cp -aT /etc/skel/ /home/$i/" $i || exit 0; done
+cp -rf /etc/skel/. ~
 sleep 2
 echo "#################################"
 echo "Done! Rebooting to Apply Settings"
