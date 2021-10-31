@@ -1,6 +1,6 @@
 #!/bin/bash
 # driver=free or driver=nonfree - grub and efi
-echo "Start arcolinux-remove-nvidia"
+echo "Start remove-nvidia"
 kernel_cmdline(){
 	for param in $(cat /proc/cmdline); do
 		case "${param}" in
@@ -117,8 +117,8 @@ if [[ $selection == "none" ]]; then
 fi
 
 echo "#################################"
-echo "End arcolinux-remove-nvidia"
+echo "End remove-nvidia"
 echo "#################################"
-#rm /usr/local/bin/arcolinux-remove-nvidia
+#rm /usr/local/bin/xerolinux-remove-nvidia
 # keep it on
-systemctl disable arcolinux-remove-nvidia.service
+systemctl disable remove-nvidia.service

@@ -157,7 +157,7 @@ mesa
 
 xero-calamares
 calamares-config
-xero-config-nord
+xerolinux-default
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
@@ -237,16 +237,11 @@ ttf-roboto
 
 ###Theme Tools
 kvantum-qt5
-latte-dock
 
 ### Rice Related
-kvantum-theme-nordic-git
-nordic-darker-standard-buttons-theme
-nordic-darker-theme
-nordic-kde-git
-nordic-theme
-sddm-nordic-theme-git
-zafiro-icon-theme
+qogir-gtk-theme
+qogir-icon-theme
+qogir-kde-theme-git
 
 ###utilities
 appmenu-gtk-module
@@ -517,6 +512,7 @@ bluedevil
 powerdevil
 libkscreen
 kinfocenter
+egl-wayland
 ksshaskpass
 kdecoration
 libksysguard
@@ -530,6 +526,7 @@ qt5-websockets
 polkit-kde-agent
 kactivitymanagerd
 kwayland-integration
+xorg-xwayland
 xdg-desktop-portal-kde
 
 ### Plasma Stuff
@@ -586,6 +583,8 @@ kcolorchooser
 kdeplasma-addons
 kwin-scripts-forceblur
 kdegraphics-thumbnailers
+plasma-wayland-session
+plasma-wayland-protocols
 
 ## Multimedia
 
@@ -602,6 +601,7 @@ kdesdk-thumbnailers
 xsettingsd
 systemdgenie
 gnome-keyring
+qt5-wayland
 keditbookmarks
 
 

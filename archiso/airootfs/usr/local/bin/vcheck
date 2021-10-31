@@ -43,5 +43,5 @@ if [ $result = "none" ];
 			pacman -Rns open-vm-tools --noconfirm
 		fi
 
-	  systemctl disable virtual-machine-check.service
+	  systemctl disable vcheck.service
 fi

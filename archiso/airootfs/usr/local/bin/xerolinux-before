@@ -11,7 +11,7 @@ pacman-key --populate
 echo "Copy grub themes (archiso deletes /boot when making the ISO)"
 echo "#################################"
 mkdir -p /boot/grub/themes
-cp -Rf /usr/share/grub/themes/XeroNord /boot/grub/themes/
+cp -Rf /usr/share/grub/themes/XeroLinux /boot/grub/themes/
 
 echo "Changing into our own linux.preset"
 echo "#################################"

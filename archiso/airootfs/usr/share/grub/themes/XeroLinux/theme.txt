@@ -1,0 +1,47 @@
+# Copyright (C) 2021 L. TechXero ~ DarkXero
+
+# general settings
+ title-text: ""
+ title-color: "#1156dc"
+ message-font: "DejaVu Sans Regular 14"
+ message-color: "#28a1dd"
+ message-bg-color: "#808080"
+ desktop-image: "background.png"
+ desktop-color: "#808080"
+ terminal-font: "DejaVu Sans Regular 14"
+
+
+# boot menu
++ boot_menu {
+    left = 16%
+    width = 50%
+    top = 18%
+    height = 45%	
+    item_font = "DroidLogo Regular 16"
+    item_color = "#1156dc"
+    selected_item_font = "DroidLogo Regular 16"
+    selected_item_color = "#1792d0"
+    icon_width = 16
+    icon_height = 16
+    item_height = 33
+    item_padding = 20
+    item_icon_space = 5
+    item_spacing = 5
+}
+
+# Show progress
++ progress_bar {
+  id = "__timeout__"
+  left = 0%
+  width = 100%
+  top = 99%
+  height = 31
+  show_text = false
+  text = ""
+  fg_color = "#3daee9"
+  bg_color = "#31363b"
+  border_color = "#31363b"
+  highlight_style = "progress_highlight_*.png"
+}
+
+
