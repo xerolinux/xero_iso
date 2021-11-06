@@ -156,8 +156,8 @@ xf86-video-vmware
 mesa
 
 xero-calamares
+xerolinux-rice
 calamares-config
-xerolinux-default
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
@@ -237,11 +237,14 @@ ttf-roboto
 
 ###Theme Tools
 kvantum-qt5
+latte-dock
+neofetch
 
 ### Rice Related
-qogir-gtk-theme
-qogir-icon-theme
-qogir-kde-theme-git
+layan-cursor-theme-git
+layan-gtk-theme-git
+layan-kde-git
+tela-circle-icon-theme-git
 
 ###utilities
 appmenu-gtk-module
@@ -301,7 +304,7 @@ pkgstats
 playerctl
 polkit
 dbus-python
-python2-pyxdg
+#python2-pyxdg
 speedtest-cli
 tree
 qt5-3d
@@ -471,7 +474,6 @@ yad
 xorg-server
 xorg-apps
 xorg-xinit
-neofetch
 
 ##### driver for virtualmachines
 
