@@ -3,15 +3,14 @@ echo "#################################"
 echo "Start xerolinux-before"
 echo "#################################"
 
+echo "Rating Arch Mirrors"
+echo "#################################"
+rate-mirrors --allow-root arch | tee /etc/pacman.d/mirrorlist
+
 echo "Populate Core Team keys"
 echo "#################################"
 pacman-key --init
 pacman-key --populate
-
-echo "Copy grub themes (archiso deletes /boot when making the ISO)"
-echo "#################################"
-mkdir -p /boot/grub/themes
-cp -Rf /usr/share/grub/themes/CyberRe /boot/grub/themes/
 
 echo "Changing into our own linux.preset"
 echo "#################################"
