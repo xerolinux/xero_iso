@@ -12,6 +12,11 @@ echo "#################################"
 pacman-key --init
 pacman-key --populate
 
+echo "Copy grub CyberRe theme"
+echo "#################################"
+mkdir -p /boot/grub/themes
+cp -Rf /usr/share/grub/themes/CyberRe /boot/grub/themes/
+
 echo "Changing into our own linux.preset"
 echo "#################################"
 mv /etc/mkinitcpio.d/xerolinux /etc/mkinitcpio.d/linux.preset
