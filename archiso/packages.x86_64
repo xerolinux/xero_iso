@@ -181,6 +181,7 @@ cryptsetup
 
 aic94xx-firmware
 wd719x-firmware
+brightnessctl
 
 #######################################################
 ###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
