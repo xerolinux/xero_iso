@@ -3,10 +3,6 @@ echo "#################################"
 echo "Start xerolinux-before"
 echo "#################################"
 
-echo "Rating Arch Mirrors"
-echo "#################################"
-rate-mirrors --allow-root arch | tee /etc/pacman.d/mirrorlist
-
 echo "Populate Core Team keys"
 echo "#################################"
 pacman-key --init
