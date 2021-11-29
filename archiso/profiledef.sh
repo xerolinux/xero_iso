@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="xerolinux-main"
-iso_label="XEROLINUX_$(date +%Y%m)"
+iso_name="xerolinux"
+iso_label="XEROLINUX_MAIN"
 iso_publisher="XeroLinux <https://xldb.techxero.com>"
 iso_application="XeroLinux Live/Rescue CD"
-iso_version="$(date +%Y.%m)"
+iso_version="main"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')

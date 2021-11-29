@@ -32,41 +32,43 @@ do
     fi
 done
 
-# free = remove nvidia keep nouveau
+# free = remove nvidia-dkms keep nouveau
 selection=$(get_driver)
 echo "#################################"
 echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "free" ]]; then
-	pacman -R --noconfirm nvidia nvidia-utils nvidia-settings
+	pacman -R --noconfirm nvidia-dkms nvidia-utils nvidia-settings
 fi
 
-#freenonouveau = remove nvidia and nouveau
+#freenonouveau = remove nvidia-dkms and nouveau
 selection=$(get_driver)
 echo "#################################"
 echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "freenonouveau" ]]; then
-	pacman -R --noconfirm nvidia nvidia-utils nvidia-settings
+	pacman -R --noconfirm nvidia-dkms nvidia-utils nvidia-settings
 	pacman -R --noconfirm xf86-video-nouveau
 fi
 
-#nonfree = keepin nvidia and nouveau
+#nonfree = keeping nvidia-dkms and nouveau
 selection=$(get_driver)
 echo "Selection was "$selection
 if [[ $selection == "nonfree" ]]; then
+	pacman -R --noconfirm xf86-video-amdgpu xf86-video-ati xf86-video-intel
 	echo "#################################"
-	echo "We keep nvidia and nouveau onboard"
+	echo "We keep nvidia-dkms and nouveau onboard"
 	echo "#################################"
 fi
 
-# nonfreenonouveau : keep nvidia and remove nouveau
+# nonfreenonouveau : keep nvidia-dkms and remove nouveau
 selection=$(get_driver)
 echo "#################################"
 echo "Selection was "$selection
 echo "#################################"
 if [[ $selection == "nonfreenonouveau" ]]; then
 	pacman -R --noconfirm xf86-video-nouveau
+	pacman -R --noconfirm xf86-video-amdgpu xf86-video-ati xf86-video-intel
 fi
 
 # remove virtual machines
