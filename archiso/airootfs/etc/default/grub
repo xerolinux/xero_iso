@@ -3,7 +3,7 @@
 GRUB_DEFAULT="saved"
 GRUB_TIMEOUT="5"
 GRUB_DISTRIBUTOR="XeroLinux"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 nowatchdog nvme_load=YES"
 GRUB_DISABLE_OS_PROBER=false
 GRUB_CMDLINE_LINUX=""
 

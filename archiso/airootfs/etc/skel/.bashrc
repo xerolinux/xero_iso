@@ -24,6 +24,9 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Path to your Snap installation.
+export PATH=$PATH:/snap/bin
+
 ##Cmatrix thing
 alias matrix='cmatrix -s -C cyan'
 

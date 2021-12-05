@@ -85,6 +85,7 @@ ppp
 pptpclient
 pv
 reflector
+refind
 reiserfsprogs
 rp-pppoe
 rsync
@@ -281,7 +282,6 @@ grsync
 gtest
 gtk-doc
 gts
-hardinfo
 hddtemp
 hw-probe
 intltool
@@ -309,13 +309,13 @@ pkgstats
 playerctl
 polkit
 dbus-python
-#python2-pyxdg
 speedtest-cli
 tree
 qt5-3d
 rhash
 s3fs-fuse
 semver
+snapd
 sshfs
 unace
 unrar
@@ -608,7 +608,7 @@ kdesdk-thumbnailers
 xsettingsd
 systemdgenie
 gnome-keyring
-qt5-wayland
+qt6-wayland
 keditbookmarks
 
 
