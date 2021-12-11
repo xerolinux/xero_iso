@@ -155,13 +155,13 @@ mesa
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-libinput
+xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
 
 xero-calamares
 xerolinux-rice
 calamares-config
-#cala-test-cfg
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
@@ -187,6 +187,7 @@ aic94xx-firmware
 upd72020x-fw
 wd719x-firmware
 brightnessctl
+r8168-dkms
 
 #######################################################
 ###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
