@@ -188,6 +188,7 @@ upd72020x-fw
 wd719x-firmware
 brightnessctl
 r8168-dkms
+imwheel
 
 #######################################################
 ###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
@@ -286,7 +287,6 @@ gts
 hddtemp
 hw-probe
 intltool
-iw
 jsoncpp
 libmtp
 laptop-detect
@@ -414,12 +414,6 @@ libopenraw
 poppler-glib
 poppler-qt5
 
-###video
-
-xf86-input-libinput
-xf86-input-vmmouse
-xf86-input-void
-
 # Python & Libs
 
 python-cffi
@@ -427,6 +421,7 @@ python-numpy
 python-docopt
 python-pyaudio
 python-anytree
+python-pyparted
 python-pygments
 python-websockets
 
@@ -456,7 +451,6 @@ alsi
 archey3
 appstream
 archiso
-bleachbit
 downgrade
 hardcode-fixer-git
 inetutils
@@ -465,7 +459,6 @@ lolcat
 lshw
 paru-bin
 arcolinux-paru-git
-python-pyparted
 synapse
 sysprof
 systemd-manager
@@ -563,9 +556,9 @@ ocs-url
 ## Utilities
 
 ark
-kate
 kgpg
 kfind
+kwrite
 dolphin
 kdialog
 konsole
