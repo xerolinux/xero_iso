@@ -14,6 +14,11 @@ echo "#################################"
 systemctl enable --now NetworkManager
 
 echo "#################################"
+echo "Enable CUPS Printing Service"
+echo "#################################"
+systemctl enable --now cups
+
+echo "#################################"
 echo "Enable Open-VM Tools Service"
 echo "#################################"
 systemctl enable --now vmtoolsd

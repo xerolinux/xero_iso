@@ -159,6 +159,19 @@ xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
 
+###Printer
+bluez-cups
+cups
+cups-filters
+cups-pdf
+ghostscript
+gsfonts
+gutenprint
+print-manager
+splix
+system-config-printer
+
+###Calamares
 xero-calamares
 xerolinux-rice
 calamares-config
