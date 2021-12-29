@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #set -e
 echo "##########################################"
-echo "Resetting/Updating XeroLinux Rice"
+echo "Resetting/Updating Xero Rice & Settings"
 echo "##########################################"
 sleep 5
 echo "Creating Backups of ~/.config folder"
