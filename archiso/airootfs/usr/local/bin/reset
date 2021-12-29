@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #set -e
 echo "##########################################"
-echo "Be Careful this will override your Rice! !"
+echo "Resetting/Updating XeroLinux Rice"
 echo "##########################################"
 sleep 5
 echo "Creating Backups of ~/.config folder"
@@ -18,4 +18,4 @@ echo "#################################"
 echo "Done! Rebooting to Apply Settings"
 echo "#################################"
 sleep 2
-sudo reboot
+reboot
