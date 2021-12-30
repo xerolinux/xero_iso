@@ -161,7 +161,7 @@ alias info='sudo pacman -Si '
 alias infox='sudo pacman -Sii '
 
 #StayRolling
-alias dist-upgrade='update && reset'
+alias dist-upgrade='update && upgrade'
 
 #shutdown or reboot
 alias sr="sudo reboot"
