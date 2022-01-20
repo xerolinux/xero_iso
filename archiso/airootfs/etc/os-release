@@ -5,6 +5,6 @@ ID_LIKE=arch
 BUILD_ID=rolling
 ANSI_COLOR="38;2;23;147;209"
 HOME_URL="https://xerolinux.xyz/"
-LOGO=xerolinux-kde
+LOGO=xerolinux
 IMAGE_ID=xerolinux-kde
 IMAGE_VERSION=2022.01.01
