@@ -58,9 +58,6 @@ alias wget="wget -c"
 #readable output
 alias df='df -h'
 
-#userlist
-alias userlist="cut -d: -f1 /etc/passwd"
-
 #Pacman for software managment
 alias search='sudo pacman -Qs'
 alias remove='sudo pacman -R'
