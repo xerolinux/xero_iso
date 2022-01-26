@@ -25,8 +25,8 @@ echo
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 60-1"
-	buildFolder=$HOME"/xerolinux-build"
-	outFolder=$HOME"/xerolinux-Out"
+	buildFolder=$HOME"/kde-build"
+	outFolder=$HOME"/kde-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 
 	echo "################################################################## "
@@ -181,10 +181,10 @@ echo
  	#Setting variables
 
  	oldname1='ArchLinux'
- 	newname1='XeroLinux'
+ 	newname1='XeroLinux-KDE'
 
  	oldname2='Arch Linux'
- 	newname2='XeroLinux'
+ 	newname2='XeroLinux-KDE'
 
  	echo "Changing all references"
  	echo
@@ -236,7 +236,7 @@ echo
 # 	echo
  	echo "Moving pkglist.x86_64.txt"
  	echo "########################"
- 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-main-pkglist.txt
+ 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-kde-pkglist.txt
 
 
 #echo
