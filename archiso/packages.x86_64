@@ -173,7 +173,6 @@ system-config-printer
 
 ###Calamares
 xero-calamares
-xerolinux-rice
 calamares-config
 
 #######################################################
@@ -255,6 +254,7 @@ ttf-hack
 ttf-roboto
 
 ###Theme Tools
+kde-rice
 kvantum
 latte-dock
 neofetch
