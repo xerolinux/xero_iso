@@ -31,6 +31,9 @@ rm -f /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm -f /etc/xdg/autostart/welcome.desktop
 rm /root/{.automated_script.sh,.zlogin}
 mv /etc/xerolinux-release /etc/lsb-release
+mv /usr/local/bin/noupgrade /usr/local/bin/upgrade
+rm /usr/local/bin/uprice
+mv /usr/local/bin/noriceupgrade /usr/local/bin/uprice
 
 echo "Permission of root"
 echo "#################################"

@@ -196,10 +196,6 @@ xorg-xrdb
 ###LUKS encryption
 cryptsetup
 
-aic94xx-firmware
-upd72020x-fw
-wd719x-firmware
-rtl8821ce-dkms-git
 mkinitcpio-firmware
 brightnessctl
 r8168-dkms
