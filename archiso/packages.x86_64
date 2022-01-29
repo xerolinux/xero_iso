@@ -254,12 +254,13 @@ ttf-hack
 ttf-roboto
 
 ###Theme Tools
-kde-rice
 kvantum
 latte-dock
 neofetch
 
 ### Rice Related
+kde-rice
+kde-wallpapers
 layan-gtk-theme-git
 layan-kde-git
 tela-circle-icon-theme-git
@@ -296,6 +297,7 @@ gtest
 gtk-doc
 gts
 hddtemp
+htop
 hw-probe
 intltool
 jsoncpp
@@ -552,7 +554,6 @@ plasma-integration
 plasma-thunderbolt
 plasma-systemmonitor
 plasma-browser-integration
-plasma-workspace-wallpapers
 
 ### Others
 
