@@ -24,7 +24,7 @@ echo
 	#isoLabel='arcolinux-next-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 60-1"
+	archisoRequiredVersion="archiso 61-1"
 	buildFolder=$HOME"/kde-build"
 	outFolder=$HOME"/kde-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
@@ -216,7 +216,7 @@ echo
 # 	echo
  	echo "Moving pkglist.x86_64.txt"
  	echo "########################"
- 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-kde-pkglist.txt
+ 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-main-pkglist.txt
 
 
 echo

@@ -27,6 +27,9 @@ fi
 # Path to your Snap installation.
 export PATH=$PATH:/snap/bin
 
+# Path to your Snap installation.
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
 ##Cmatrix thing
 alias matrix='cmatrix -s -C cyan'
 
