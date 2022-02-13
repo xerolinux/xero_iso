@@ -27,8 +27,12 @@ fi
 # Path to your Snap installation.
 export PATH=$PATH:/snap/bin
 
-# Path to your Snap installation.
-export PATH="$HOME/.emacs.d/bin:$PATH"
+##BTRFS Stuff
+alias btrfs-fs='sudo btrfs filesystem df /'
+alias btrfs-ls='sudo btrfs su li / -t'
+
+##Snapper Stuff
+alias snapls='sudo snapper list'
 
 ##Cmatrix thing
 alias matrix='cmatrix -s -C cyan'

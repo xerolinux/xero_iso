@@ -52,7 +52,6 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
-linux-firmware-marvell
 lsscsi
 lvm2
 lynx
@@ -174,7 +173,7 @@ system-config-printer
 
 ###Calamares
 xero-calamares
-calamares-config
+calamares-config-dev
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
@@ -219,6 +218,7 @@ polkit-qt5
 qt5-svg
 qt5-tools
 qt5-translations
+qt5-x11extras
 qt5-xmlpatterns
 solid
 wget
@@ -248,10 +248,12 @@ adobe-source-sans-pro-fonts
 awesome-terminal-fonts
 nerd-fonts-fira-code
 noto-fonts-emoji
+nerd-fonts-hack
+nerd-fonts-meslo
+nerd-fonts-terminus
 otf-libertinus
 tex-gyre-fonts
 ttf-droid
-ttf-hack
 ttf-roboto
 
 ###Theme Tools
@@ -260,11 +262,15 @@ latte-dock
 neofetch
 
 ### Rice Related
-kde-rice
-kde-wallpapers
-layan-gtk-theme-git
-layan-kde-git
-tela-circle-icon-theme-git
+kde-nord
+nordic-theme
+nordic-kde-git
+zafiro-icon-theme
+nordic-wallpapers
+nordic-darker-theme
+sddm-nordic-theme-git
+kvantum-theme-nordic-git
+nordic-darker-standard-buttons-theme
 
 ###utilities
 appmenu-gtk-module
@@ -281,16 +287,17 @@ dmidecode
 dnsmasq
 duf
 edid-decode-git
-exfat-utils
 expac
+extra-cmake-modules
 file-roller
 fuse2
 fuse3
 fuseiso
 galculator
+gcc
+gettext
 git
 gksu
-glxinfo
 gnome-disk-utility
 graphviz
 grsync
@@ -298,7 +305,6 @@ gtest
 gtk-doc
 gts
 hddtemp
-htop
 hw-probe
 intltool
 jsoncpp
@@ -400,7 +406,6 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-openresolv
 rate-mirrors-bin
 smbclient
 traceroute
@@ -516,6 +521,7 @@ linux-headers
 kwin
 milou
 breeze
+kcrash
 drkonqi
 kgamma5
 kscreen
@@ -530,9 +536,12 @@ kinfocenter
 egl-wayland
 ksshaskpass
 kdecoration
+kglobalaccel
 libksysguard
+kde-dev-utils
 kscreenlocker
 xdg-user-dirs
+knotifications
 systemsettings
 kwayland-server
 kde-gtk-config
@@ -575,6 +584,7 @@ kwrite
 dolphin
 kdialog
 konsole
+kalendar
 kmousetool
 ksystemlog
 khelpcenter
