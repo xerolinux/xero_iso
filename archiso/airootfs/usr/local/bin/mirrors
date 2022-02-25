@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+echo
+echo "#################################"
+echo " Updating Mirros To Fastest Ones "
+echo "#################################"
+sleep 3
+rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist && sudo pacman -Sy
+echo
+echo "#################################"
+echo " Done ! You can now Install Xero "
+echo "#################################"
+sleep 5
+exit

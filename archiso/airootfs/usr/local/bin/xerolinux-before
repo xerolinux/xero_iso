@@ -11,7 +11,7 @@ pacman-key --populate
 echo "Copy grub CyberRe theme"
 echo "#################################"
 mkdir -p /boot/grub/themes
-cp -Rf /usr/share/grub/themes/XeroNord /boot/grub/themes/
+cp -Rf /usr/share/grub/themes/XeroKDE /boot/grub/themes/
 
 echo "Changing into our own linux.preset"
 echo "#################################"

@@ -173,7 +173,7 @@ system-config-printer
 
 ###Calamares
 xero-calamares
-calamares-config-dev
+calamares-config
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
@@ -262,15 +262,11 @@ latte-dock
 neofetch
 
 ### Rice Related
-kde-nord
-nordic-theme
-nordic-kde-git
-zafiro-icon-theme
-nordic-wallpapers
-nordic-darker-theme
-sddm-nordic-theme-git
-kvantum-theme-nordic-git
-nordic-darker-standard-buttons-theme
+kde-rice
+layan-kde-git
+kde-wallpapers
+layan-gtk-theme-git
+tela-circle-icon-theme-git
 
 ###utilities
 appmenu-gtk-module
@@ -495,6 +491,7 @@ xorg-xinit
 
 ##### driver for virtualmachines
 
+spice-vdagent
 open-vm-tools
 qemu-guest-agent
 virtualbox-guest-utils

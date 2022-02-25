@@ -28,6 +28,7 @@ file_permissions=(
   ["/usr/local/bin/skel"]="0:0:755"
   ["/usr/local/bin/all-cores"]="0:0:755"
   ["/usr/local/bin/keyfix"]="0:0:755"
+  ["/usr/local/bin/mirrors"]="0:0:755"
   ["/usr/local/bin/xerolinux-final"]="0:0:755"
   ["/usr/local/bin/services"]="0:0:755"
   ["/usr/local/bin/graphical-target"]="0:0:755"
