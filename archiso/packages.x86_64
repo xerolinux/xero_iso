@@ -326,7 +326,6 @@ pkgstats
 playerctl
 polkit
 dbus-python
-speedtest-cli
 tree
 qt5-3d
 rhash
@@ -354,7 +353,6 @@ zip
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
-thunar-shares-plugin
 thunar-volman
 
 ## G-Streamer
@@ -441,13 +439,12 @@ python-pygments
 python-websockets
 
 ###########################################################################
-#                           XEROLINUX_REPOS
+#                           XEROLINUX_SELECTION
 ###########################################################################
 
 ###applications
 
-vivaldi
-vivaldi-ffmpeg-codecs
+flakon
 
 ###cursors
 
@@ -475,7 +472,7 @@ lshw
 paru-bin
 synapse
 sysprof
-systemd-manager
+systemd-manager-git
 yad
 
 #######################################################
@@ -534,6 +531,7 @@ ksshaskpass
 kdecoration
 kglobalaccel
 libksysguard
+xorg-xwayland
 kde-dev-utils
 kscreenlocker
 xdg-user-dirs
@@ -546,7 +544,6 @@ qt5-websockets
 polkit-kde-agent
 kactivitymanagerd
 kwayland-integration
-xorg-xwayland
 xdg-desktop-portal-kde
 
 ### Plasma Stuff
@@ -629,4 +626,4 @@ keditbookmarks
 
 ##### want to add/use the ArcoLinux repos
 
-arcolinux-keyring
+#arcolinux-keyring
