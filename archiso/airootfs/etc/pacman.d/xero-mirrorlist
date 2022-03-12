@@ -9,4 +9,4 @@ Server = https://ftp.belnet.be/arcolinux/$repo/$arch
 #Server = https://mirror.aarnet.edu.au/pub/arcolinux/$repo/$arch
 
 # United States San Francisco - no xlarge repo here
-Server = https://arcolinux.github.io/$repo/$arch
+#Server = https://arcolinux.github.io/$repo/$arch

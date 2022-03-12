@@ -238,6 +238,7 @@ gmrun
 grub-customizer
 numlockx
 pamac-all
+pamac-tray-icon-plasma
 
 ###conky
 jq
@@ -289,7 +290,6 @@ file-roller
 fuse2
 fuse3
 fuseiso
-galculator
 gcc
 gettext
 git
@@ -473,7 +473,6 @@ inxi
 lolcat
 lshw
 paru-bin
-arcolinux-paru-git
 synapse
 sysprof
 systemd-manager
@@ -577,6 +576,7 @@ ocs-url
 ark
 kgpg
 kfind
+kcalc
 kwrite
 dolphin
 kdialog

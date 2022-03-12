@@ -34,6 +34,7 @@ mv /etc/xerolinux-release /etc/lsb-release
 mv /usr/local/bin/noupgrade /usr/local/bin/upgrade
 rm /usr/local/bin/uprice
 mv /usr/local/bin/noriceupgrade /usr/local/bin/uprice
+rm /usr/bin/pamac-tray
 
 echo "Permission of root"
 echo "#################################"
