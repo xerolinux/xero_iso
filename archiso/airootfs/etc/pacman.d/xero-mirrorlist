@@ -1,12 +1,9 @@
 #######################################################
-# Gitlab United States
-#Server = https://gitlab.com/arcolinux/$repo/-/raw/master/$arch
+# Direct Paid Host United States
+#Server = https://repos.xerolinux.xyz/$repo/$arch
 
-# Europe Belgium Brussels
-Server = https://ftp.belnet.be/arcolinux/$repo/$arch
+# Github United States (No XL Repo There)
+#Server = https://repos.xerolinux.xyz/$repo/$arch
 
-# Australia
-#Server = https://mirror.aarnet.edu.au/pub/arcolinux/$repo/$arch
-
-# United States San Francisco - no xlarge repo here
-#Server = https://arcolinux.github.io/$repo/$arch
+# Europe Germany Free Server
+Server = https://codeberg.org/XeroLinux/$repo/media/branch/main/$arch
