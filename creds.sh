@@ -32,9 +32,9 @@ tput sgr0
 echo
 echo "Select the correct user"
 echo
-echo "0.  Do nothing"
-echo "1.  TechXero"
-echo "2.  fake1"
+echo "0.  Nada"
+echo "1.  GitHub"
+echo "2.  Codeberg"
 echo "3.  fake2"
 echo "4.  fake3"
 echo "Type the number..."
@@ -61,7 +61,13 @@ case $CHOICE in
 			git config --global credential.helper 'cache --timeout=32000'
       ;;
     2 )
-      echo
+			git config --global pull.rebase false
+			git config --global push.default simple
+			git config --global user.name "XeroLinux"
+			git config --global user.email "steve@techxero.com"
+			sudo git config --system core.editor nano
+			git config --global credential.helper cache
+			git config --global credential.helper 'cache --timeout=32000'
       ;;
     3 )
 	  echo
