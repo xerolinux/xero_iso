@@ -40,11 +40,6 @@ echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
 
-echo "LightlyShaders Build & Install"
-echo "#################################"
-git clone https://github.com/TechXero/LightlyShaders.git
-cd LightlyShaders; mkdir qt5build; cd qt5build; cmake ../ -DCMAKE_INSTALL_PREFIX=/usr -DQT5BUILD=ON && make && sudo make install
-
 echo "#################################"
 echo "End xerolinux-final"
 echo "#################################"
