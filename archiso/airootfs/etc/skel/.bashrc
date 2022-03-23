@@ -68,6 +68,9 @@ alias df='df -h'
 #userlist
 alias userlist="cut -d: -f1 /etc/passwd"
 
+## Fixes
+alias xero-mirrors='cd /etc/pacman.d/ && sudo rm xero-mirrorlist && sudo wget https://raw.githubusercontent.com/TechXero/Store/master/scripts/xero-mirrorlist'
+
 #Pacman for software managment
 alias search='sudo pacman -Qs'
 alias remove='sudo pacman -R'
