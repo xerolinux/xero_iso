@@ -8,6 +8,7 @@ amd-ucode
 arch-install-scripts
 b43-fwcutter
 base
+beep
 bind-tools
 brltty
 broadcom-wl-dkms
