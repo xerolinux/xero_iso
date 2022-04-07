@@ -1,21 +1,62 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #set -e
-echo "##########################################"
-echo "Resetting/Updating Xero Rice & Settings"
-echo "##########################################"
-sleep 5
-echo "Creating Backups of ~/.config folder"
-echo "#####################################"
-cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
-sleep 2
-echo "#################################"
-echo "Restoring default settings"
-echo "#################################"
-sleep 2
-cp -rf /etc/skel/. ~
-sleep 2
-echo "#################################"
-echo "Done! Rebooting to Apply Settings"
-echo "#################################"
-sleep 2
-reboot
+##################################################################################################################
+# Written to be used on 64 bits computers
+# Author 	: 	DarkXero
+# Website 	: 	http://xerolinux.xyz
+##################################################################################################################
+tput setaf 1
+echo "###############################################################################"
+echo "#                         !!! XeroLinux Reset Tool !!!                        #"
+echo "#                                                                             #"
+echo "#              Having Issues With Messed Up Layout or Settings ?              #"
+echo "#                                                                             #"
+echo "#      This Will Reset To ISO Defaults. Current Settings Will, Be Lost !      #"
+echo "###############################################################################"
+tput sgr0
+echo
+echo "Hey there, So What Shall We Do ?"
+echo
+echo "1.  Reset to ISO Defaults."
+echo "2.  Nothing/Exit"
+echo
+echo "Please Select an Option..."
+echo
+
+read CHOICE
+
+case $CHOICE in
+
+    1 )
+      echo "Creating Backups of ~/.config folder"
+      echo "#####################################"
+      cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
+      sleep 2
+      echo "#################################"
+      echo "Restoring default settings"
+      echo "#################################"
+      sleep 2
+      cp -rf /etc/skel/. ~
+      sleep 2
+      echo "#################################"
+      echo "Done! Rebooting to Apply Settings"
+      echo "#################################"
+      sleep 2
+      reboot
+
+      ;;
+
+    2 )
+      echo
+      echo "########################################"
+      echo "   We did nothing as per your request   "
+      echo "########################################"
+      echo
+      ;;
+
+    * )
+      echo "#################################"
+      echo "Choose the correct number"
+      echo "#################################"
+      ;;
+esac

@@ -21,7 +21,6 @@ file_permissions=(
   ["/root/.automated_script.sh"]="0:0:755"
   ["/usr/local/bin/vcheck"]="0:0:755"
   ["/usr/local/bin/freset"]="0:0:755"
-  ["/usr/local/bin/pacman-beep.sh"]="0:0:755"
   ["/usr/local/bin/vbox-share"]="0:0:755"
   ["/usr/local/bin/dmcheck"]="0:0:755"
   ["/usr/local/bin/xerolinux-before"]="0:0:755"

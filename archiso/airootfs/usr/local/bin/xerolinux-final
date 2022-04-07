@@ -34,7 +34,12 @@ mv /etc/xerolinux-release /etc/lsb-release
 mv /usr/local/bin/noupgrade /usr/local/bin/upgrade
 rm /usr/local/bin/uprice
 mv /usr/local/bin/noriceupgrade /usr/local/bin/uprice
-rm /usr/bin/pamac-tray
+
+echo "Patching System.conf"
+echo "#################################"
+sed -i "s/#RebootWatchdogSec=10min/RebootWatchdogSec=30s/g" /etc/systemd/system.conf
+sed -i "s/#DefaultTimeoutStopSec=90s/DefaultTimeoutStopSec=5s/g" /etc/systemd/system.conf
+sed -i "s/#DefaultTimeoutStartSec=90s/DefaultTimeoutStartSec=10s/g" /etc/systemd/system.conf
 
 echo "Permission of root"
 echo "#################################"
