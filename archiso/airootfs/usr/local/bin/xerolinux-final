@@ -18,6 +18,11 @@ echo "Cleanup autologin root"
 echo "#################################"
 rm -rf /etc/systemd/system/getty@tty1.service.d
 
+echo "Killing Pacman-Init"
+echo "#################################"
+rm /etc/systemd/system/multi-user.target.wants/pacman-init.service
+rm /etc/systemd/system/pacman-init.service
+
 echo "Setting editor to nano"
 echo "#################################"
 echo "EDITOR=nano" >> /etc/profile

@@ -238,8 +238,8 @@ network-manager-applet
 gmrun
 grub-customizer
 numlockx
-pamac-all
-pamac-tray-icon-plasma
+pamac-gtk
+libpamac
 
 ###conky
 jq
@@ -332,7 +332,7 @@ qt5-3d
 rhash
 s3fs-fuse
 semver
-snapd
+#snapd
 sshfs
 unace
 unrar
@@ -349,13 +349,6 @@ yakuake
 zenity
 zip
 
-## Thunar AiO (Required For Root)
-
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
-
 ## G-Streamer
 
 gstreamer
@@ -364,31 +357,18 @@ gst-plugins-base
 gst-plugins-bad
 gst-plugins-ugly
 
-## Pulse Audio
-
-#pulseaudio
-#pulseaudio-alsa
-#pulseaudio-bluetooth
-#pulseaudio-qt
-#pulsemixer
-#pavucontrol
-#python-pulsectl
-
 ## Pipewire Audio
 
-#pipewire
-#pipewire-alsa
-#pipewire-jack
-#pipewire-media-session
-#pipewire-pulse
-#pipewire-zeroconf
+pipewire-jack
+pipewire-support
+lib32-pipewire-jack
 
 ###bluetooth
 
-#blueberry
-#bluez
-#bluez-libs
-#bluez-utils
+blueberry
+bluez
+bluez-libs
+bluez-utils
 
 ###network
 
@@ -445,11 +425,10 @@ python-websockets
 
 ###applications
 
-falkon
+firefox
 
 ###cursors
 
-bibata-cursor-theme-bin
 breeze
 
 ###tools
@@ -562,7 +541,6 @@ plasma-browser-integration
 
 ### Others
 
-go
 pacman-contrib
 systemd-kcm
 ocs-url
@@ -623,9 +601,3 @@ systemdgenie
 gnome-keyring
 qt6-wayland
 keditbookmarks
-
-
-
-##### want to add/use the ArcoLinux repos
-
-#arcolinux-keyring
