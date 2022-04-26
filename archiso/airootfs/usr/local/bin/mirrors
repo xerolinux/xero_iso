@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo
 echo "#################################"
-echo " Updating Mirros To Fastest Ones "
+echo " Updating Mirrors To Fastest Ones "
 echo "#################################"
 sleep 3
 rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist && sudo pacman -Sy
