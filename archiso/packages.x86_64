@@ -6,11 +6,11 @@
 alsa-utils
 amd-ucode
 arch-install-scripts
+archinstall
 b43-fwcutter
 base
 bind-tools
 brltty
-broadcom-wl-dkms
 btrfs-progs
 clonezilla
 cloud-init
@@ -20,13 +20,13 @@ ddrescue
 dhclient
 dhcpcd
 diffutils
+dmidecode
 dmraid
 dnsmasq
 dosfstools
 e2fsprogs
 edk2-shell
 efibootmgr
-#espeakup
 ethtool
 exfatprogs
 f2fs-tools
@@ -36,7 +36,10 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
+grml-zsh-config
+grub
 hdparm
+hyperv
 intel-ucode
 ipw2100-fw
 ipw2200-fw
@@ -75,6 +78,7 @@ nmap
 ntfs-3g
 nvme-cli
 openconnect
+open-iscsi
 openssh
 openvpn
 os-prober
@@ -86,8 +90,7 @@ ppp
 pptpclient
 pv
 reflector
-refind
-reiserfsprogs
+#refind
 rp-pppoe
 rsync
 screen
@@ -136,21 +139,20 @@ wget
 #######################################################
 
 ###nVidia
-nvidia-dkms
-nvidia-utils
-nvidia-settings
+#nvidia-dkms
+#nvidia-utils
+#nvidia-settings
 
 ###Video
-xf86-video-amdgpu
-xf86-video-ati
+mesa
+#xf86-video-ati
+#xf86-video-amdgpu
+#xf86-video-intel
+#xf86-video-nouveau
 xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
 xf86-video-openchrome
 xf86-video-qxl
-xf86-video-vesa
 xf86-video-vmware
-mesa
 
 ###Input
 xf86-input-elographics
@@ -180,7 +182,6 @@ calamares-config
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
 #######################################################
 
-sddm
 bash
 bash-completion
 dex
@@ -196,10 +197,10 @@ xorg-xrdb
 ###LUKS encryption
 cryptsetup
 
-mkinitcpio-firmware
-brightnessctl
-r8168-dkms
 imwheel
+brightnessctl
+mkinitcpio-firmware
+
 
 #######################################################
 ###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
@@ -236,32 +237,32 @@ network-manager-applet
 
 ###applications
 gmrun
-grub-customizer
 numlockx
-pamac-gtk
-libpamac
+grub-customizer
 
-###conky
+##Pamac GUI
+flatpak
+pamac-gtk
+
+
+###weird
 jq
+figlet
 lm_sensors
 
 ###fonts
-adobe-source-sans-pro-fonts
-awesome-terminal-fonts
-nerd-fonts-fira-code
-noto-fonts-emoji
-nerd-fonts-hack
-nerd-fonts-meslo
-nerd-fonts-terminus
-otf-libertinus
-tex-gyre-fonts
 ttf-droid
 ttf-roboto
+otf-libertinus
+tex-gyre-fonts
+nerd-fonts-fira-code
+awesome-terminal-fonts
+adobe-source-sans-pro-fonts
 
 ###Theme Tools
 kvantum
-latte-dock
 neofetch
+latte-dock
 
 ### Rice Related
 kde-rice
@@ -341,13 +342,26 @@ vala
 vi
 vnstat
 w3m
-webkit2gtk
 wmctrl
 xdo
 xdotool
 yakuake
 zenity
 zip
+alsi
+archey3
+appstream
+archiso
+downgrade
+htop
+hardcode-fixer-git
+inetutils
+inxi
+lshw
+synapse
+sysprof
+systemd-manager-git
+yad
 
 ## G-Streamer
 
@@ -356,6 +370,16 @@ gst-libav
 gst-plugins-base
 gst-plugins-bad
 gst-plugins-ugly
+
+## Pulse Audio
+
+#pulseaudio
+#pulseaudio-alsa
+#pulseaudio-bluetooth
+#pulseaudio-qt
+#pulsemixer
+#pavucontrol
+#python-pulsectl
 
 ## Pipewire Audio
 
@@ -374,16 +398,16 @@ bluez-utils
 
 avahi
 nss-mdns
-modemmanager
-mobile-broadband-provider-info
-net-tools
-networkmanager-openconnect
-networkmanager-openvpn
-networkmanager-pptp
-networkmanager-vpnc
-rate-mirrors-bin
 smbclient
+net-tools
 traceroute
+modemmanager
+rate-mirrors-bin
+networkmanager-vpnc
+networkmanager-pptp
+networkmanager-openvpn
+networkmanager-openconnect
+mobile-broadband-provider-info
 
 ###file management
 
@@ -400,13 +424,13 @@ udisks2
 
 ###tumbler
 
-tumbler
-ffmpegthumbnailer
-freetype2
 libgsf
+tumbler
+freetype2
 libopenraw
-poppler-glib
 poppler-qt5
+poppler-glib
+ffmpegthumbnailer
 
 # Python & Libs
 
@@ -423,51 +447,30 @@ python-websockets
 #                           XEROLINUX_SELECTION
 ###########################################################################
 
-###applications
-
+###Browser
 firefox
 
 ###cursors
-
 breeze
 
 ###tools
-
 grub-tools
 mkinitcpio-openswap
 
-
-###utilities
-
-alsi
-archey3
-appstream
-archiso
-downgrade
-htop
-hardcode-fixer-git
-inetutils
-inxi
-lolcat
-lshw
+## AUR
+yay-bin
 paru-bin
-synapse
-sysprof
-systemd-manager-git
-yad
 
 #######################################################
 ###                    EXTRAS                       ###
 #######################################################
 
 ##### xorg applications
-
-xorg-server
 xorg-apps
 xorg-xinit
+xorg-server
 
-##### driver for virtualmachines
-
+##### driver for virtual machines
 spice-vdagent
 open-vm-tools
 qemu-guest-agent
@@ -507,18 +510,15 @@ bluedevil
 powerdevil
 libkscreen
 kinfocenter
-egl-wayland
 ksshaskpass
 kdecoration
 kglobalaccel
 libksysguard
-xorg-xwayland
 kde-dev-utils
 kscreenlocker
 xdg-user-dirs
 knotifications
 systemsettings
-kwayland-server
 kde-gtk-config
 packagekit-qt5
 qt5-websockets
@@ -526,6 +526,16 @@ polkit-kde-agent
 kactivitymanagerd
 kwayland-integration
 xdg-desktop-portal-kde
+
+### KDE Wayland
+
+#qt6-wayland
+#egl-wayland
+#xorg-xwayland
+#kwayland-server
+#plasma-wayland-session
+#plasma-wayland-protocols
+
 
 ### Plasma Stuff
 
@@ -582,8 +592,6 @@ kcolorchooser
 kdeplasma-addons
 kwin-scripts-forceblur
 kdegraphics-thumbnailers
-plasma-wayland-session
-plasma-wayland-protocols
 
 ## Multimedia
 
@@ -600,5 +608,6 @@ kdesdk-thumbnailers
 xsettingsd
 systemdgenie
 gnome-keyring
-qt6-wayland
+qt5-virtualkeyboard
+#qt6-virtualkeyboard
 keditbookmarks

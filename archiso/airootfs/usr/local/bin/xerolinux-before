@@ -8,7 +8,7 @@ echo "#################################"
 pacman-key --init
 pacman-key --populate
 
-echo "Copy grub CyberRe theme"
+echo "Copy grub XeroKDE theme"
 echo "#################################"
 mkdir -p /boot/grub/themes
 cp -Rf /usr/share/grub/themes/XeroKDE /boot/grub/themes/

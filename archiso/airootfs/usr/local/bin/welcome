@@ -1,7 +1,7 @@
 #!/bin/bash
 yad --title "XeroLinux Welcome" --form --columns=2 --width=480 --height=120 --text="Welcome to <b>XeroLinux</b> this will help get you started. Keep in mind that this app will be replaced after install with the post-install version." --image=$HOME/xero.png  \
---field="<b>Start XeroLinux Installer</b>":fbtn "sh -c 'sudo -E /usr/bin/calamares -d'" \
+--field="<b>Start XeroLinux Installer</b>":fbtn "sh -c 'sudo -E /usr/bin/calamares -D6'" \
 --field="<b>VMWareTools Resolution Fix</b>":fbtn "konsole -e 'sudo systemctl enable --now vmtoolsd'" \
---field="<b>Start Installer Debug mode</b>":fbtn "konsole -e 'sudo -E /usr/bin/calamares -D6'" \
+--field="<b>Update Arch Mirrorlist</b>":fbtn "konsole -e sh '/usr/local/bin/ram'" \
 --field="<b>Launch Partition Manager</b>":fbtn "sh -c '/usr/bin/gnome-disks'" \
 --button=Exit:1

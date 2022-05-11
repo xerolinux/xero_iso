@@ -2,6 +2,3 @@
 #######################################################
 # Direct Paid Host United States
 Server = https://repos.xerolinux.xyz/$repo/$arch
-
-# Github United States (No XL Repo There)
-#Server = https://xerolinux.github.io/$repo/$arch

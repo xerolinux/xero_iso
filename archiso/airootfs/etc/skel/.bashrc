@@ -16,12 +16,12 @@ export HISTCONTROL=ignoreboth:erasedups
 
 PS1='[\u@\h \W]\$ '
 
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
+if [ -d '$HOME/.bin' ] ;
+  then PATH='$HOME/.bin:$PATH'
 fi
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
+if [ -d '$HOME/.local/bin' ] ;
+  then PATH='$HOME/.local/bin:$PATH'
 fi
 
 # Path to your Snap installation.
@@ -38,13 +38,13 @@ alias snapls='sudo snapper list'
 alias matrix='cmatrix -s -C cyan'
 
 #iso and version used to install ArcoLinux
-alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
+alias iso='cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}''
 
 #ignore upper and lowercase when TAB completion
-bind "set completion-ignore-case on"
+bind 'set completion-ignore-case on'
 
 #systeminfo
-alias probe="sudo -E hw-probe -all -upload"
+alias probe='sudo -E hw-probe -all -upload'
 
 # Replace ls with exa
 alias ls='exa -al --color=always --group-directories-first --icons' # preferred listing
@@ -54,22 +54,19 @@ alias lt='exa -aT --color=always --group-directories-first --icons' # tree listi
 alias l='exa -lah --color=always --group-directories-first --icons' # tree listing
 
 #pacman unlock
-alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias unlock='sudo rm /var/lib/pacman/db.lck'
 
 #available free memory
-alias free="free -mt"
+alias free='free -mt'
 
 #continue download
-alias wget="wget -c"
+alias wget='wget -c'
 
 #readable output
 alias df='df -h'
 
 #userlist
-alias userlist="cut -d: -f1 /etc/passwd"
-
-## Fixes
-alias xero-mirrors='cd /etc/pacman.d/ && sudo rm xero-mirrorlist && sudo wget https://raw.githubusercontent.com/TechXero/Store/master/scripts/xero-mirrorlist'
+alias userlist='cut -d: -f1 /etc/passwd'
 
 #Pacman for software managment
 alias search='sudo pacman -Qs'
@@ -93,15 +90,34 @@ alias fpup='flatpak update'
 #Snap Update
 alias sup='sudo snap refresh'
 
+#switch between bash and zsh
+alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
+alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+
+#skip integrity check
+alias paruskip='paru -S --mflags --skipinteg'
+alias yayskip='yay -S --mflags --skipinteg'
+
+#Easter Eggs
+alias a1='figlet -c -w 100 Alan1000'
+alias gk='figlet -c -w 100 GamerKing64'
+alias digi='figlet -c -w 100 Digidude512'
+alias imr='figlet -c -f banner -w 111 I am / root'
+
 #grub update
 alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
+## Fixes
+alias xero-mirrors='cd /etc/pacman.d/ && sudo rm xero-mirrorlist && sudo wget https://raw.githubusercontent.com/TechXero/Store/master/scripts/xero-mirrorlist'
+
 #get fastest mirrors in your neighborhood
 alias ram='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
+alias rams='rate-mirrors --allow-root --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
 alias reft='sudo systemctl enable reflector.service reflector.timer && sudo systemctl start reflector.service reflector.timer'
 
-#quickly kill stuff
-alias kc='killall conky'
+#our experimental - best option for the moment
+alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
+alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 
 #Bash aliases
 alias mkfile='touch'
@@ -114,16 +130,21 @@ alias cls='clear && neofetch'
 alias traceme='traceroute github.com'
 
 #hardware info --short
-alias hw="hwinfo --short"
+alias hw='hwinfo --short'
 
 #youtube-dl
-alias ytv-best='yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio" --merge-output-format mp4 '
+alias yta-aac="yt-dlp --extract-audio --audio-format aac "
+alias yta-best="yt-dlp --extract-audio --audio-format best "
+alias yta-flac="yt-dlp --extract-audio --audio-format flac "
+alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
+
+alias ytv-best='yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '
 
 #GiT  command
 alias gc='git clone '
 
 #userlist
-alias userlist="cut -d: -f1 /etc/passwd"
+alias userlist='cut -d: -f1 /etc/passwd'
 
 #Copy/Remove files/dirs
 alias rmd='rm -r'
@@ -134,13 +155,16 @@ alias scp='sudo cp'
 alias scpd='sudo cp -R'
 
 #nano
+alias nz='$EDITOR ~/.zshrc'
 alias bashrc='sudo nano ~/.bashrc'
 alias nsddm='sudo nano /etc/sddm.conf'
 alias pconf='sudo nano /etc/pacman.conf'
 alias mkpkg='sudo nano /etc/makepkg.conf'
 alias ngrub='sudo nano /etc/default/grub'
 alias smbconf='sudo nano /etc/samba/smb.conf'
-alias nmirrorlist='sudo nano /etc/pacman.d/mirrorlist'
+alias nlightdm='sudo $EDITOR /etc/lightdm/lightdm.conf'
+alias nmirrorlist='sudo nano /etc/pacman.d/xero-mirrorlist'
+alias nsddmk='sudo $EDITOR /etc/sddm.conf.d/kde_settings.conf'
 
 #cd/ aliases
 alias home='cd ~'
@@ -155,13 +179,25 @@ alias docs='cd ~/Documents'
 alias sapps='cd /usr/share/applications'
 alias lapps='cd ~/.local/share/applications'
 
+#verify signature for isos
+alias gpg-check='gpg2 --keyserver-options auto-key-retrieve --verify'
+
+#receive the key of a developer
+alias gpg-retrieve='gpg2 --keyserver-options auto-key-retrieve --receive-keys'
+
 #switch between lightdm and sddm
-alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
-alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
+alias tolightdm='sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now''
+alias tosddm='sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now''
 
 #Recent Installed Packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
+alias rip='expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl'
+alias riplong='expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl'
+
+## Tool Related
+alias fixme='sh /usr/local/bin/data/fixes'
+alias shell='sh /usr/local/bin/data/shell'
+alias gaming='sh /usr/local/bin/data/gaming'
+alias riceme='sh /usr/local/bin/data/ricez'
 
 #Package Info
 alias info='sudo pacman -Si '
@@ -174,8 +210,8 @@ alias rkeys='sudo pacman-key --refresh-keys'
 alias dist-upgrade='update && upgrade'
 
 #shutdown or reboot
-alias sr="sudo reboot"
-alias ssn="sudo shutdown now"
+alias sr='sudo reboot'
+alias ssn='sudo shutdown now'
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
@@ -197,10 +233,10 @@ ex ()
       *.deb)       ar x $1      ;;
       *.tar.xz)    tar xf $1    ;;
       *.tar.zst)   unzstd $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
+      *)           echo ''$1' cannot be extracted via ex()' ;;
     esac
   else
-    echo "'$1' is not a valid file"
+    echo ''$1' is not a valid file'
   fi
 }
 
