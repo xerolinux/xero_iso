@@ -177,6 +177,7 @@ system-config-printer
 ###Calamares
 xero-calamares
 calamares-config
+xerolinux-mirrorlist
 
 #######################################################
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
