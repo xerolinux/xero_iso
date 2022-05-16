@@ -206,8 +206,8 @@ alias infox='sudo pacman -Sii '
 ##Refresh Keys
 alias rkeys='sudo pacman-key --refresh-keys'
 
-#StayRolling
-alias dist-upgrade='update && upgrade'
+#PiAi
+alias xlai='sudo -E /usr/lib/xero-piai/xero-piai --setupmode'
 
 #shutdown or reboot
 alias sr='sudo reboot'
