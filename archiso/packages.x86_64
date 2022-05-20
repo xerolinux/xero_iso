@@ -385,6 +385,7 @@ gst-plugins-ugly
 
 ## Pipewire Audio
 
+wireplumber
 pipewire-jack
 pipewire-support
 lib32-pipewire-jack
