@@ -4,7 +4,7 @@ echo "#################################"
 echo " Updating Mirrors To Fastest Ones "
 echo "#################################"
 sleep 3
-rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist && sudo pacman -Sy
+rate-mirrors --allow-root --disable-comments --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist && sudo pacman -Sy
 echo
 echo "#################################"
 echo " Done ! You can now Install Xero "

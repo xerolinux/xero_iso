@@ -111,8 +111,7 @@ alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias xero-mirrors='cd /etc/pacman.d/ && sudo rm xero-mirrorlist && sudo wget https://raw.githubusercontent.com/TechXero/Store/master/scripts/xero-mirrorlist'
 
 #get fastest mirrors in your neighborhood
-alias ram='rate-mirrors --allow-root arch | sudo tee /etc/pacman.d/mirrorlist'
-alias rams='rate-mirrors --allow-root --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
+alias ram='rate-mirrors --allow-root --disable-comments --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
 alias reft='sudo systemctl enable reflector.service reflector.timer && sudo systemctl start reflector.service reflector.timer'
 
 #our experimental - best option for the moment
