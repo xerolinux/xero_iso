@@ -527,7 +527,6 @@ packagekit-qt5
 qt5-websockets
 polkit-kde-agent
 kactivitymanagerd
-kwayland-integration
 xdg-desktop-portal-kde
 
 ### KDE Wayland
@@ -536,6 +535,7 @@ xdg-desktop-portal-kde
 #egl-wayland
 #xorg-xwayland
 #kwayland-server
+#kwayland-integration
 #plasma-wayland-session
 #plasma-wayland-protocols
 
