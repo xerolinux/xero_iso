@@ -335,7 +335,6 @@ qt5-3d
 rhash
 s3fs-fuse
 semver
-#snapd
 sshfs
 unace
 unrar
