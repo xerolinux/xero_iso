@@ -2,14 +2,17 @@
 ##                            PACKAGES AVAILABLE
 #####################################################################
 
-###archiso
+### archiso
+
+archiso
 alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
 b43-fwcutter
 base
-bind-tools
+base-devel
+bind
 brltty
 btrfs-progs
 clonezilla
@@ -36,7 +39,6 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grml-zsh-config
 grub
 hdparm
 hyperv
@@ -53,6 +55,7 @@ less
 libfido2
 libusb-compat
 linux
+linux-headers
 linux-atm
 linux-firmware
 linux-firmware-marvell
@@ -119,63 +122,56 @@ wvdial
 xfsprogs
 xl2tpd
 
-##ZSH Stuff
-exa
-zsh
-nerd-fonts-hack
+### archiso-extra
 
-###archiso-extra
-dialog
-dnsutils
-grub
-repoctl
-haveged
-logrotate
+exa
 ntp
 wget
+grub
+dialog
+repoctl
+haveged
+dnsutils
+logrotate
 
-# everything above comes from archiso releng folder
 #######################################################
 ###                    XERO                         ###
 #######################################################
 
-###nVidia
-#nvidia-dkms
-#nvidia-utils
-#nvidia-settings
+### Video
 
-###Video
 mesa
-#xf86-video-ati
-#xf86-video-amdgpu
-#xf86-video-intel
-#xf86-video-nouveau
-xf86-video-fbdev
-xf86-video-openchrome
 xf86-video-qxl
+xf86-video-fbdev
 xf86-video-vmware
+xf86-video-openchrome
 
-###Input
-xf86-input-elographics
+### Input
+
+synapse
+libinput
+xf86-input-void
 xf86-input-evdev
+xf86-input-vmmouse
 xf86-input-libinput
 xf86-input-synaptics
-xf86-input-vmmouse
-xf86-input-void
+xf86-input-elographics
 
-###Printer
-bluez-cups
+### Printer
+
 cups
-cups-filters
-cups-pdf
-ghostscript
-gsfonts
-gutenprint
-print-manager
 splix
+gsfonts
+cups-pdf
+bluez-cups
+gutenprint
+ghostscript
+cups-filters
+print-manager
 system-config-printer
 
-###Calamares
+### XeroLinux Build
+
 xero-calamares
 calamares-config
 xerolinux-mirrorlist
@@ -184,203 +180,179 @@ xerolinux-mirrorlist
 ###      PACKAGES THAT STAY AFTER INSTALLATION      ###
 #######################################################
 
-bash
-bash-completion
 dex
-libxinerama
+bash
 make
-xorg-xkill
 xorg-xrdb
+xorg-xkill
+libxinerama
+bash-completion
 
 #######################################################
 ###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
 #######################################################
 
-###LUKS encryption
-cryptsetup
-
 imwheel
+cryptsetup
 brightnessctl
 mkinitcpio-firmware
-
 
 #######################################################
 ###      PACKAGES THAT ARE REQUIRED TO BUILD !      ###
 #######################################################
 
-boost-libs
-ckbcomp
-gtk-update-icon-cache
-hwinfo
-kconfig
-ki18n
 kio
+ki18n
+solid
+xmlto
+ckbcomp
+kconfig
+kpmcore
+yaml-cpp
+grub-tools
+boost-libs
+polkit-qt5
 kcoreaddons
 kiconthemes
-kpmcore
-polkit-qt5
-qt5-svg
-qt5-tools
-qt5-translations
 qt5-x11extras
 qt5-xmlpatterns
-solid
-wget
-xmlto
-yaml-cpp
-
-##### you can also use nmtui from the terminal
-networkmanager
-network-manager-applet
+mkinitcpio-openswap
+gtk-update-icon-cache
 
 #########################################################################
 #                  SOFTWARE FROM ARCH LINUX REPOSITORIES
 #########################################################################
 
-###applications
+### Applications
+
+jq
 gmrun
+figlet
 numlockx
+lm_sensors
 grub-customizer
 
-##Pamac GUI
-flatpak
-pamac-gtk
+### Fonts
 
-
-###weird
-jq
-figlet
-lm_sensors
-
-###fonts
 ttf-droid
 ttf-roboto
 otf-libertinus
 tex-gyre-fonts
+nerd-fonts-hack
 nerd-fonts-fira-code
 awesome-terminal-fonts
 adobe-source-sans-pro-fonts
 
-###Theme Tools
+### Theme Tools
+
 kvantum
 neofetch
 latte-dock
 
-### Rice Related
+### Rice/Config Related
+
 kde-rice
 layan-kde-git
 kde-wallpapers
 layan-gtk-theme-git
 tela-circle-icon-theme-git
 
-###utilities
-appmenu-gtk-module
-arandr
-asciinema
-assimp
+### System Utilities
+
+vi
+duf
+gcc
+git
+gts
+npm
+w3m
+yad
+zip
+xdo
+alsi
+inxi
+meld
+wget
+gksu
+lzop
+nmon
+tree
+vala
+htop
+lshw
+cmake
 boost
 cblas
-cifs-utils
-cmake
-cronie
-dconf-editor
-dmidecode
-dnsmasq
-duf
-edid-decode-git
 expac
-extra-cmake-modules
-file-roller
 fuse2
 fuse3
-fuseiso
-gcc
-gettext
-git
-gksu
-gnome-disk-utility
-graphviz
-grsync
 gtest
-gtk-doc
-gts
-hddtemp
-hw-probe
-intltool
-jsoncpp
-libmtp
-laptop-detect
 lhasa
-libinput
-lsb-release
-lzop
-meld
 meson
-mlocate
-netpbm
 ninja
-nmon
-nodejs
-node-gyp
-npm
-oniguruma
-p7zip
-perl-xml-parser
-pkgstats
-playerctl
-polkit
-dbus-python
-tree
-qt5-3d
-rhash
-s3fs-fuse
-semver
-sshfs
 unace
 unrar
 unzip
-vala
-vi
+p7zip
+rhash
+sshfs
 vnstat
-w3m
+nodejs
+cronie
+hwinfo
+arandr
+assimp
+netpbm
 wmctrl
-xdo
-xdotool
-yakuake
-zenity
-zip
-alsi
-archey3
-appstream
-archiso
-downgrade
-htop
-hardcode-fixer-git
-inetutils
-inxi
-lshw
-synapse
+grsync
+libmtp
+polkit
 sysprof
+semver
+zenity
+dnsmasq
+hddtemp
+mlocate
+gtk-doc
+jsoncpp
+archey3
+fuseiso
+gettext
+xdotool
+node-gyp
+intltool
+hw-probe
+graphviz
+pkgstats
+inetutils
+downgrade
+s3fs-fuse
+playerctl
+dmidecode
+asciinema
+oniguruma
+appstream
+cifs-utils
+file-roller
+lsb-release
+dbus-python
+dconf-editor
+laptop-detect
+perl-xml-parser
+edid-decode-git
+gnome-disk-utility
+appmenu-gtk-module
+hardcode-fixer-git
 systemd-manager-git
-yad
+extra-cmake-modules
 
-## G-Streamer
+### G-Streamer
 
 gstreamer
 gst-libav
-gst-plugins-base
 gst-plugins-bad
+gst-plugins-base
 gst-plugins-ugly
-
-## Pulse Audio
-
-#pulseaudio
-#pulseaudio-alsa
-#pulseaudio-bluetooth
-#pulseaudio-qt
-#pulsemixer
-#pavucontrol
-#python-pulsectl
 
 ## Pipewire Audio
 
@@ -389,14 +361,14 @@ pipewire-jack
 pipewire-support
 lib32-pipewire-jack
 
-###bluetooth
+### Bluetooth
 
-blueberry
 bluez
+blueberry
 bluez-libs
 bluez-utils
 
-###network
+### Network
 
 avahi
 nss-mdns
@@ -404,27 +376,29 @@ smbclient
 net-tools
 traceroute
 modemmanager
+networkmanager
 rate-mirrors-bin
 networkmanager-vpnc
 networkmanager-pptp
+network-manager-applet
 networkmanager-openvpn
 networkmanager-openconnect
 mobile-broadband-provider-info
 
-###file management
+### File management
 
 gvfs
-gvfs-afc
-gvfs-gphoto2
-gvfs-mtp
-gvfs-nfs
-gvfs-smb
-ldmtool
 mtpfs
 udiskie
 udisks2
+ldmtool
+gvfs-afc
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+gvfs-gphoto2
 
-###tumbler
+### Tumbler
 
 libgsf
 tumbler
@@ -434,7 +408,7 @@ poppler-qt5
 poppler-glib
 ffmpegthumbnailer
 
-# Python & Libs
+### Python & Libs
 
 python-cffi
 python-numpy
@@ -449,48 +423,48 @@ python-websockets
 #                           XEROLINUX_SELECTION
 ###########################################################################
 
-###Browser
-firefox
+### Browser
 
-###cursors
+firefox
+firefox-adblock-plus
+
+### cursors
+
 breeze
 
-###tools
-grub-tools
-mkinitcpio-openswap
+### Multimedia
 
-## AUR
+ffmpegthumbs
+
+### PKG Management
+
 yay-bin
+flatpak
 paru-bin
+pamac-gtk
+pamac-tray-icon-plasma
 
 #######################################################
 ###                    EXTRAS                       ###
 #######################################################
 
-##### xorg applications
+### Xorg Applications
+
 xorg-apps
 xorg-xinit
 xorg-server
 
-##### driver for virtual machines
+### Virtual Machine
+
 spice-vdagent
 open-vm-tools
 qemu-guest-agent
 virtualbox-guest-utils
 
-##### sddm display manager
 
-sddm
-
-##### want to have base-devel group
-
-base-devel
-
-##### want to have linux-headers
-
-linux-headers
-
-##### want to have a desktop
+#######################################################
+###                  KDE Desktop                    ###
+#######################################################
 
 ### Plasma group content Categorized
 ### https://archlinux.org/groups/x86_64/plasma/
@@ -498,6 +472,7 @@ linux-headers
 ### Essentials
 
 kwin
+sddm
 milou
 breeze
 kcrash
@@ -523,21 +498,10 @@ knotifications
 systemsettings
 kde-gtk-config
 packagekit-qt5
-qt5-websockets
 polkit-kde-agent
 kactivitymanagerd
+kdenetwork-filesharing
 xdg-desktop-portal-kde
-
-### KDE Wayland
-
-#qt6-wayland
-#egl-wayland
-#xorg-xwayland
-#kwayland-server
-#kwayland-integration
-#plasma-wayland-session
-#plasma-wayland-protocols
-
 
 ### Plasma Stuff
 
@@ -554,9 +518,19 @@ plasma-browser-integration
 
 ### Others
 
-pacman-contrib
-systemd-kcm
 ocs-url
+systemd-kcm
+pacman-contrib
+
+### KDE Wayland
+
+#qt6-wayland
+#egl-wayland
+#xorg-xwayland
+#kwayland-server
+#kwayland-integration
+#plasma-wayland-session
+#plasma-wayland-protocols
 
 ### KDE Applications group content Categorized
 ### https://archlinux.org/groups/x86_64/kde-applications/
@@ -568,7 +542,6 @@ kgpg
 kate
 kfind
 kcalc
-kwrite
 dolphin
 kdialog
 konsole
@@ -577,16 +550,14 @@ kmousetool
 ksystemlog
 khelpcenter
 markdownpart
-kwalletmanager
 
 ## Networking
 
 kdeconnect
 zeroconf-ioslave
 kdenetwork-filesharing
-signon-kwallet-extension
 
-## Graphics
+### Graphics
 
 svgpart
 gwenview
@@ -596,10 +567,6 @@ kdeplasma-addons
 kwin-scripts-forceblur
 kdegraphics-thumbnailers
 
-## Multimedia
-
-ffmpegthumbs
-
 ## KDE-SDK
 
 lokalize
@@ -608,10 +575,41 @@ kdesdk-thumbnailers
 
 ## Complements
 
+yakuake
 kio-gdrive
 xsettingsd
 systemdgenie
 gnome-keyring
-qt5-virtualkeyboard
-#qt6-virtualkeyboard
 keditbookmarks
+qt5-virtualkeyboard
+
+## QT6-Upgrade
+
+qt6-3d
+qt6-svg
+qt6-base
+qt6-tools
+qt6-scxml
+qt6-lottie
+qt6-charts
+qt6-5compat
+qt6-sensors
+qt6-webview
+qt6-quick3d
+qt6-serialbus
+qt6-webengine
+qt6-datavis3d
+qt6-websockets
+qt6-webchannel
+qt6-serialport
+qt6-multimedia
+qt6-declarative
+qt6-shadertools
+qt6-positioning
+qt6-networkauth
+qt6-imageformats
+qt6-connectivity
+qt6-translations
+qt6-quicktimeline
+qt6-remoteobjects
+qt6-languageserver
