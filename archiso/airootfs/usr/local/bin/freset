@@ -12,6 +12,7 @@ echo "#                                                                         
 echo "#              Having Issues With Messed Up Layout or Settings ?              #"
 echo "#                                                                             #"
 echo "#      This Will Reset To ISO Defaults. Current Settings Will, Be Lost !      #"
+echo "#  System Will Reboot. Settings Will Be Backed Up Under ~/.config-backup-date  #"
 echo "###############################################################################"
 tput sgr0
 echo
