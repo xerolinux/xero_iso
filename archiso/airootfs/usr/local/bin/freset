@@ -31,12 +31,22 @@ case $CHOICE in
       echo "Creating Backups of ~/.config folder"
       echo "#####################################"
       cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S)
+      rm -Rf ~/.local/share/plasma/
       sleep 2
       echo "#################################"
       echo "Restoring default settings"
       echo "#################################"
       sleep 2
       cp -rf /etc/skel/. ~
+      sudo pacman -S latte-dock-git kvantum --noconfirm --needed
+      sudo rm /usr/share/defaultbg/XeroLinux.png
+      cd /usr/share/defaultbg/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero_iso/main/archiso/airootfs/usr/share/defaultbg/XeroLinux.png
+      sudo rm /etc/sddm.conf.d/kde_settings.conf
+      cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/XeroLinuxDev/xero_iso_dev/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
+      sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
+      cd ~ && git clone https://github.com/xerolinux/default-grub.git
+      cd ~/default-grub/ && sudo ./install.sh
+      rm -rf ~/default-grub
       sleep 2
       echo "#################################"
       echo "Done! Rebooting to Apply Settings"
