@@ -12,14 +12,13 @@ echo "#                                                                         
 echo "#              Having Issues With Messed Up Layout or Settings ?              #"
 echo "#                                                                             #"
 echo "#      This Will Reset To ISO Defaults. Current Settings Will, Be Lost !      #"
-echo "#  System Will Reboot. Settings Will Be Backed Up Under ~/.config-backup-date  #"
 echo "###############################################################################"
 tput sgr0
 echo
-echo "Hey there, So What Shall We Do ?"
+echo "Are You Sure You Want To Reset ?"
 echo
-echo "1.  Reset to ISO Defaults."
-echo "2.  Nothing/Exit"
+echo "1.  Yes, Please."
+echo "2.  No, Please Don't."
 echo
 echo "Please Select an Option..."
 echo
@@ -39,12 +38,8 @@ case $CHOICE in
       echo "#################################"
       sleep 2
       cp -rf /etc/skel/. ~
-      sudo pacman -S latte-dock-git kvantum --noconfirm --needed
-      sudo rm /usr/share/defaultbg/XeroLinux.png
-      cd /usr/share/defaultbg/ && sudo wget https://raw.githubusercontent.com/xerolinux/xero_iso/main/archiso/airootfs/usr/share/defaultbg/XeroLinux.png
-      sudo rm /etc/sddm.conf.d/kde_settings.conf
-      cd /etc/sddm.conf.d/ && sudo wget https://raw.githubusercontent.com/XeroLinuxDev/xero_iso_dev/main/archiso/airootfs/etc/sddm.conf.d/kde_settings.conf
-      sudo sed -i "s/Current/#Current/g" /etc/sddm.conf
+      sudo pacman -S latte-dock-git --noconfirm --needed
+      sudo sed -i "s/Current=.*/Current=XeroDark/" /etc/sddm.conf.d/kde_settings.conf
       cd ~ && git clone https://github.com/xerolinux/default-grub.git
       cd ~/default-grub/ && sudo ./install.sh
       rm -rf ~/default-grub
