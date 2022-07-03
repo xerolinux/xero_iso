@@ -51,7 +51,6 @@ sed -i "s/#DefaultTimeoutStartSec=90s/DefaultTimeoutStartSec=10s/g" /etc/systemd
 echo "#################################"
 echo "End xerolinux-final"
 echo "#################################"
-rm /usr/local/bin/ram
 rm /usr/local/bin/vcheck
 rm /usr/local/bin/welcome
 rm /usr/local/bin/all-cores

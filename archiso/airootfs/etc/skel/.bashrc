@@ -27,10 +27,6 @@ fi
 # Path to your Snap installation.
 export PATH=$PATH:/snap/bin
 
-##BTRFS Stuff
-alias btrfs-fs='sudo btrfs filesystem df /'
-alias btrfs-ls='sudo btrfs su li / -t'
-
 ##Snapper Stuff
 alias snapls='sudo snapper list'
 
@@ -78,21 +74,11 @@ alias clrcache='sudo pacman -Scc'
 alias updb='paru && sudo pacman -Sy'
 alias orphans='sudo pacman -Rns $(pacman -Qtdq)'
 
-#Paru as aur helper - updates everything
-alias pget='paru -S '
-alias prm='paru -Rs '
-alias psr='paru -Ss '
-alias upall='paru -Syyu --noconfirm'
-
 #Flatpak Update
 alias fpup='flatpak update'
 
 #Snap Update
 alias sup='sudo snap refresh'
-
-#switch between bash and zsh
-alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
-alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 
 #skip integrity check
 alias paruskip='paru -S --mflags --skipinteg'
@@ -106,13 +92,6 @@ alias imr='figlet -c -f banner -w 111 I am / root'
 
 #grub update
 alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-
-## Fixes
-alias xero-mirrors='cd /etc/pacman.d/ && sudo rm xero-mirrorlist && sudo wget https://raw.githubusercontent.com/TechXero/Store/master/scripts/xero-mirrorlist'
-
-#get fastest mirrors in your neighborhood
-alias ram='rate-mirrors --allow-root --disable-comments --protocol https arch  | sudo tee /etc/pacman.d/mirrorlist'
-alias reft='sudo systemctl enable reflector.service reflector.timer && sudo systemctl start reflector.service reflector.timer'
 
 #our experimental - best option for the moment
 alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
@@ -141,9 +120,7 @@ alias ytv-best='yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+besta
 
 #GiT  command
 alias gc='git clone '
-
-#userlist
-alias userlist='cut -d: -f1 /etc/passwd'
+alias gp='git pull'
 
 #Copy/Remove files/dirs
 alias rmd='rm -r'
@@ -239,4 +216,4 @@ ex ()
   fi
 }
 
-clear && neofetch
+neofetch
