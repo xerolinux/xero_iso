@@ -65,14 +65,21 @@ alias df='df -h'
 alias userlist='cut -d: -f1 /etc/passwd'
 
 #Pacman for software managment
+alias upall='topgrade'
 alias search='sudo pacman -Qs'
 alias remove='sudo pacman -R'
 alias install='sudo pacman -S'
 alias linstall='sudo pacman -U '
 alias update='sudo pacman -Syyu'
 alias clrcache='sudo pacman -Scc'
-alias updb='paru && sudo pacman -Sy'
 alias orphans='sudo pacman -Rns $(pacman -Qtdq)'
+
+# Paru/Yay stuff
+alias pget='paru -S '
+alias yget='yay -S '
+alias yrem='yay -R '
+alias prem='paru -R '
+
 
 #Flatpak Update
 alias fpup='flatpak update'
@@ -83,12 +90,6 @@ alias sup='sudo snap refresh'
 #skip integrity check
 alias paruskip='paru -S --mflags --skipinteg'
 alias yayskip='yay -S --mflags --skipinteg'
-
-#Easter Eggs
-alias a1='figlet -c -w 100 Alan1000'
-alias gk='figlet -c -w 100 GamerKing64'
-alias digi='figlet -c -w 100 Digidude512'
-alias imr='figlet -c -f banner -w 111 I am / root'
 
 #grub update
 alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
