@@ -34,7 +34,7 @@ alias snapls='sudo snapper list'
 alias matrix='cmatrix -s -C cyan'
 
 #iso and version used to install ArcoLinux
-alias iso='cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}''
+alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 
 #ignore upper and lowercase when TAB completion
 bind 'set completion-ignore-case on'
@@ -116,7 +116,7 @@ alias yta-best="yt-dlp --extract-audio --audio-format best "
 alias yta-flac="yt-dlp --extract-audio --audio-format flac "
 alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
 
-alias ytv-best='yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '
+alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 
 #GiT  command
 alias gc='git clone '
@@ -162,12 +162,12 @@ alias gpg-check='gpg2 --keyserver-options auto-key-retrieve --verify'
 alias gpg-retrieve='gpg2 --keyserver-options auto-key-retrieve --receive-keys'
 
 #switch between lightdm and sddm
-alias tolightdm='sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now''
-alias tosddm='sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now''
+alias tolightdm="sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings --noconfirm --needed ; sudo systemctl enable lightdm.service -f ; echo 'Lightm is active - reboot now'"
+alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable sddm.service -f ; echo 'Sddm is active - reboot now'"
 
 #Recent Installed Packages
-alias rip='expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl'
-alias riplong='expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl'
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
 ## Tool Related
 alias fixme='sh /usr/local/bin/data/fixes'
